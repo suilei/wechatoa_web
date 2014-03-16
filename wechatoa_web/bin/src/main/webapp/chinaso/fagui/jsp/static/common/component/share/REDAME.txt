@@ -1,0 +1,22 @@
+访问地址：
+http://www.panguso.com/static/component/pg/share/css/pg_share_ptip.1.0.css
+http://www.panguso.com/static/component/pg/share/js/pg_share_ptip.1.0.js
+分享模板网址：
+http://www.panguso.com/static/component/pg/share/tpl/shareTemplate.html
+demo文件夹中含有调用分享组件的js模板
+调用参数说明：
+必传参数：
+ content: 分享的内容
+ url ：分享来源
+ target：分享弹框显示所在jquery对象
+ triggerBy：触发分享的jquery对象
+可选参数
+ addURLContent: 含来源链接的分享内容,为统一显示来源，建议加上此参数
+ images：分享中需显示的图片，目前仅支持添加一个图片链接。
+         新浪、豆瓣、搜狐、网易、腾讯、人人、开心网支持传图片
+ type: tip的类型,有'append'、'pop'两个取值，
+  	  'append'为占文档流的弹框，'pop'为不占文档流的弹框，默认为'append'
+ position：若tip为pop，此参数为有效，默认为'position': {'my': 'top left','at': 'bottom right'}
+ weiboAppKey:微博来源的认证码，如果有4大微博的Appkey，则可传递此参数
+ kaixin.title 分享的标题，仅开心网的特殊参数
+

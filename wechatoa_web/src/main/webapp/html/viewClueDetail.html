@@ -1,0 +1,257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>线索查看-列表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css"  rel="stylesheet" href="../static/css/normalize.css"/>
+<link type="text/css" rel="stylesheet" href="../static/css/news.css"  />
+
+<script src="../static/js/lib/jquery-1.10.2.min.js"></script>
+
+</head> 
+  <body>
+  	<div class="news-dig-up" >
+      <div class="header">
+          <div class="title">NEWS DIG UP <span>新闻线索发现系统</span></div>
+          <div class="exit"><a href=""><img src="../static/image/exit.png" width="45" height="45" align="absmiddle">退出</a></div>
+      </div>
+      <div class="container clearfix" id="wordDetail">
+        <div class="left">
+            <div class="user">
+              <img src="../static/image/user.png" width="93" height="93">
+              <p>上次登录时间<br>8月31日 14：00</p>
+            </div>
+            <div class="view-clue">
+              <img src="../static/image/view_clue_white.png" width="50" height="40">
+              <p>查看线索</p>
+            </div>
+            <div class="my-adopt">
+              <img src="../static/image/my_adopt_grey.png" width="50" height="40">
+              <p>我的采纳</p>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="headbar"> 
+              <div class="viewclue-btn"><img src="../static/image/view_clue_grey.png" width="50" height="40" align="absmiddle">查看线索</div>
+              <div class="viewmore-btn"><a href=""><img src="../static/image/back.png" width="40" height="35" align="absmiddle">返回</a></div>
+            </div>
+            <div class="general">
+              <div class="g_header">
+                <span class="g_title">"北京当众摔婴儿男子"新闻概况&nbsp;&nbsp;<input type="button" value="采 纳" class="g_adopt" id="adoptOp"/></span>
+                <span class="g_time">2013.9.14 01:14:55</span>
+              </div>
+              <div class="g_content">
+                <div class="g_image"><img src="../static/image/xinhuawang.png" width="120" height="80"/></div>
+                <div class="g_sub">23日晚8点50分左右, 一名推着孩子的母亲在大兴区科技路公交车站旁 和一辆轿车内的两名男子发生冲突。 双方在口角之后,车上的两名男子下车殴打 了该女子,更为...</div>
+                <div class="g_btn">
+                    <div class="g_trend">
+                      <div><img src="../static/image/clue_trend.png" width="65" height="60" /></div>
+                      <p class="g_trend_filter">线索走势</p>
+                    </div>
+                    <div class="g_weibo">
+                      <div><img src="../static/image/clue_weibo.png" width="65" height="60"/></div>
+                      <p class="g_weibo_filter">线索微博</p>
+                      </div>
+                </div>
+              </div>
+              <!-- 采纳弹出框 start-->
+              <div class="g_pop" style="display:none;" id="gPop">
+                  <span>您确定要采纳这条线索吗？</span>
+                  <input type="button" value="确定" class="g_pop_sure" id="gPopSure"/>&nbsp;<input type="button" value="取消" class="g_pop_cancel" id="gPopCancel"/>
+              </div>
+              <div class="g_pop_success" style="display:none;" id="gPopSuc">
+                  <span>采纳成功</span>
+              </div>
+              <div class="g_pop" style="display:none;" id="gPopQ">
+                  <span>您确定要取消采纳这条线索吗？</span>
+                  <input type="button" value="确定" class="g_pop_sure" id="gPopQSure"/>&nbsp;<input type="button" value="取消" class="g_pop_cancel" id="gPopQCancel"/>
+              </div>
+               <div class="g_pop_success" style="display:none;" id="gPopQSuc">
+                  <span>取消采纳成功</span>
+              </div>
+             <!-- 采纳弹出框 end-->
+            </div>
+            <div class="clue_content">
+              <div class="c_header">
+                  <img src="../static/image/clue_trend_small.png" align="absmiddle">&nbsp;线索走势
+              </div>
+              <div class="c_content"> 
+                  <div id="container" class="c_pic"></div>
+                  <div class="c_data">
+                      <div class="c_data_des">
+                        <div class="c_speed">109.53<p>最高转发速度（次/秒）</p></div>
+                        <div class="c_live">3009.53<p>最高传播活跃指数</p></div>
+                        <div class="c_follow">High<p>意见领袖关注度</p></div>
+                      </div>
+                      <div class="c_data_value">
+                        <p class="c_user"><img src="../static/image/success.png" align="absmiddle"/>&nbsp;&nbsp;信息发布源为认证用户</p>
+                       
+                        <div class="c_value">
+                            <p>线索价值：</p>
+                            <div class="c_progress"><p class="c_progress_green" style="width:30%"></p></div>
+                            <div class="c_grad"><p style="text-align:left;">低</p><p style="text-align:center;">中</p><p style="text-align:right;">高</span></p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class="weibo_content">
+            <div class="w_header">
+                  <img src="../static/image/clue_weibo_small.png" align="absmiddle">&nbsp;线索微博&nbsp;<span>191条</span>
+            </div>
+            <ul class="w_content">
+              <li>
+                <div class="w_img"><img src="../static/image/xinhuawang.png"/></div>
+                <div class="w_data">
+                     <p><span class="w_title">新文化报</span><span>&nbsp;&nbsp;今天11:23&nbsp;来自新浪微博</span></p>
+                     <p class="w_word">23日晚8点50分左右, 一名推着孩子的母亲在大兴区科技路公交车站旁 和一辆轿车内的两名男子发生冲突。 双方在口角之后,车上的两名男子下车殴打 了该女子,更为...</p>
+                </div>
+                <div class="w_detail">
+                  <p class="w_view_detail">查看详情</p>
+                  <div class="t_c">
+                     <div><img src="../static/image/transmit.png"/ align="absmiddle">&nbsp;1329</div>
+                     <div class="m_l"><img src="../static/image/commit.png" align="absmiddle"/>&nbsp;391</div>
+                  </div>
+                </div>
+              </li>
+               <li>
+                <div class="w_img"><img src="../static/image/xinhuawang.png"/></div>
+                <div class="w_data">
+                     <p><span class="w_title">新文化报</span><span>&nbsp;&nbsp;今天11:23&nbsp;来自新浪微博</span></p>
+                     <p class="w_word">23日晚8点50分左右, 一名推着孩子的母亲在大兴区科技路公交车站旁 和一辆轿车内的两名男子发生冲突。 双方在口角之后,车上的两名男子下车殴打 了该女子,更为...</p>
+                </div>
+                <div class="w_detail">
+                  <p class="w_view_detail">查看详情</p>
+                  <div class="t_c">
+                     <div><img src="../static/image/transmit.png"/ align="absmiddle">&nbsp;1329</div>
+                     <div class="m_l"><img src="../static/image/commit.png" align="absmiddle"/>&nbsp;391</div>
+                  </div>
+                </div>
+              </li>
+               <li>
+                <div class="w_img"><img src="../static/image/xinhuawang.png"/></div>
+                <div class="w_data">
+                     <p><span class="w_title">新文化报</span><span>&nbsp;&nbsp;今天11:23&nbsp;来自新浪微博</span></p>
+                     <p class="w_word">23日晚8点50分左右, 一名推着孩子的母亲在大兴区科技路公交车站旁 和一辆轿车内的两名男子发生冲突。 </p>
+                </div>
+                <div class="w_detail">
+                  <p class="w_view_detail">查看详情</p>
+                  <div class="t_c">
+                     <div><img src="../static/image/transmit.png"/ align="absmiddle">&nbsp;1329</div>
+                     <div class="m_l"><img src="../static/image/commit.png" align="absmiddle"/>&nbsp;391</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+        </div>
+    </div>
+  	</div>
+<script src="../static/js/lib/highcharts.js"></script>
+<script src="../static/js/lib/exporting.js"></script>
+ <script type="text/javascript">
+ (function(){
+	 $('#adoptOp').click(function(){
+		 var adoptVal;
+		 adoptVal = $('#adoptOp').attr('value');
+		 if (adoptVal == '采 纳') {
+			 $('#gPop').show();
+			 $('#gPopSure').click(function(){
+				 /*确定采纳后执行的操作*/	 
+			   /* $.ajax({
+					type: "get",
+					url: "http://www.cnblogs.com/rss",
+					success: function(data, textStatus){
+						 $('#gPopSuc').show();
+					},
+					error: function(){
+						//请求出错处理
+					}
+		        });*/
+		        
+				 $('#gPop').hide();
+				 $('#gPopSuc').fadeIn(1000, function(){
+					 $('#gPopSuc').fadeOut(1000);
+					 $('#adoptOp').attr('value','取消采纳');
+				 });
+			 });
+			 $('#gPopCancel').click(function(){
+				 $('#gPop').hide();
+			 });
+
+		 }
+		 if (adoptVal == '取消采纳') {
+			 $('#gPopQ').show();
+			 $('#gPopQSure').click(function(){
+				 /*确定采纳后执行的操作*/	 
+			   /* $.ajax({
+					type: "get",
+					url: "http://www.cnblogs.com/rss",
+					success: function(data, textStatus){
+						 $('#gPopSuc').show();
+					},
+					error: function(){
+						//请求出错处理
+					}
+		        });*/
+			 
+				 $('#gPopQ').hide();
+			   	 $('#gPopQSuc').fadeIn(1000, function(){
+					 $('#gPopQSuc').fadeOut(1000);
+					 $('#adoptOp').attr('value','采 纳');
+				 });
+			 });
+			 $('#gPopQCancel').click(function(){
+				 $('#gPopQ').hide();
+			 });
+
+		 }
+	 });
+	 
+     $('#container').highcharts({
+         title: {
+             text: '热门话题走势分析图',
+             x: -20 //center
+         },
+         /*subtitle: {
+             text: 'Source: WorldClimate.com',
+             x: -20
+         },*/
+         xAxis: {
+             labels: {
+                 enabled: false
+             },
+             categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec','Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec','Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec','Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec','Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+         },
+         yAxis: {
+             title: {
+                 text: '次/秒'
+             },
+             plotLines: [{
+                 value: 0,
+                 width: 1,
+                 color: '#808080'
+             }]
+         },
+         /*tooltip: {
+             valueSuffix: '°C'
+         },*/
+         legend: {
+             layout: 'vertical',
+             align: 'right',
+             verticalAlign: 'middle',
+             borderWidth: 0
+         },
+         series: [{
+             name: 'Tokyo',
+             data: [70, 69, 95, 145, 182, 215, 252, 265, 233, 183, 139, 96,70, 69, 95, 145, 182, 215, 252, 265, 233, 183, 139, 96,70, 69, 95, 145, 182, 215, 252, 265, 233, 183, 139, 96,70, 69, 95, 145, 182, 215, 252, 265, 233, 183, 139, 96]
+         }]
+     });
+
+ })();
+ </script>
+  </body>
+</html>

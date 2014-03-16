@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="x-ua-compatible" content="IE=7"/> 
+<link rel="stylesheet" href="http://www.chinaso.com/common/base/css/base.css"></link>
+<link rel="stylesheet" href="http://www.chinaso.com/common/base/css/component.css"></link>
+<link href="http://www.chinaso.com/common/base/css/fagui_component.css" type="text/css" rel="stylesheet"/>
+<link href="static/css/fagui_zuizhong.css" type="text/css" rel="stylesheet"/>
+<title>法规频道最终页</title>
+<body class="fagui_all">
+<!--头部-->
+<!--1-顶部-->    
+<div class="top" id="jToolbar"><script src="http://www.panguso.com/common/component/toolbar/toolbar.js"></script></div>
+<!--1-顶部 end--> 
+
+<!--2-LOGO+输入框+按钮-->      
+<div class="head">
+    <!--logo插件-->    
+<a href="#" class="logo"></a>
+ <!--导航-->  
+<p class="nav" id="nav_wrapper">
+				<span id="nav_news"><a href="http://news.chinaso.com" id="nav_news_link">新闻</a></span>
+				<span id="nav_web"><a href="http://web.chinaso.com" id="nav_web_link">网页</a></span>
+				<span id="nav_image"><a href="http://image.chinaso.com" id="nav_image_link">图片</a></span>
+				<span id="nav_journal"><a href="http://nav.chinaso.com" id="nav_nav_link">导航</a></span>
+				<span id="nav_community"><a href="http://house.chinaso.com" id="nav_house_link">房产</a></span>
+
+				
+			</p>
+
+<script type="text/javascript">
+(function(){var b={news:{title:"新闻",sid:"nav_news",lid:"nav_news_link",url:"#",sprefix:"",useable:true},web:{title:"网页",sid:"nav_web",lid:"nav_web_link",url:"#",sprefix:"",useable:true},image:{title:"图片",sid:"nav_image",lid:"nav_image_link",url:"#",sprefix:"",useable:true},journal:{title:"报刊",sid:"nav_journal",lid:"nav_journal_link",url:"#",sprefix:"",useable:true},community:{title:"社区",sid:"nav_community",lid:"nav_community_link",url:"#",sprefix:"",useable:true},voice:{title:"音频",sid:"nav_voice",lid:"nav_voice_link",url:"#",sprefix:"",useable:true},video:{title:"视频",sid:"nav_video",lid:"nav_video_link",url:"#",sprefix:"",useable:false},app:{title:"应用",sid:"nav_app",lid:"nav_app_link",url:"#",sprefix:"",useable:true},people:{title:"人物",sid:"nav_people",lid:"nav_people_link",url:"#",sprefix:"",useable:true},more:{title:"更多",sid:"nav_more",lid:"nav_more_link",url:"#",sprefix:"",useable:true}},h={news:"news",search:"web",image:"image",photo:"image",video:"video",music:"music",d:"web",map:"map",book:"book",app:"app"},i="nav_wrapper",c="nav_index",d="nav_result",p="cur",r="web";function s(){var w=document.getElementById(i),v="",u;if(!w){v='<p class="nav" id="nav_wrapper">';for(u in b){if(b.hasOwnProperty(u)&&b[u].useable===true){v+='<span id="'+b[u].sid+'"><a href="'+b[u].url+'" id="'+b[u].lid+'">'+b[u].title+"</a></span>"}}v+="</p>";document.writeln(v)}}function f(u){return u.className.replace(/\s+/," ").split(" ")}function j(w,x){var v=f(w);for(var u=0;u<v.length;u++){if(v[u]===x){return true}}return false}function e(u,v){u.className+=(u.className?" ":"")+v;return true}function k(w,x){var v=f(w);var y=v.length;for(var u=y-1;u>=0;u--){if(v[u]===x){delete (v[u])}}w.className=v.join(" ");return(y==v.length?false:true)}function q(){return window.location.href}if(!window.pgnav){window.pgnav={}}window.pgnav.removeClassName=k;window.pgnav.addClassName=e;window.pgnav.hasClassName=j;window.pgnav.getCurrentURL=q;window.pgnav.updateTopNavLink=function(x){if(typeof x==="string"&&x.length>0){for(var u in b){if(b.hasOwnProperty(u)&&b[u].useable===true){var y=document.getElementById(b[u].lid);if(typeof y==="object"&&y){var v=y.href.indexOf("?");var w=y.href;if(v!=-1){w=y.href.substring(0,v);y.href=w+"?q="+x}else{y.href=w+b[u].sprefix+"?q="+x}}}}}};var t=r,m=d,o="",g="",a=null;function l(){if(typeof pgNavConf==="object"&&pgNavConf){if("channel" in pgNavConf){if(typeof pgNavConf.channel==="string"){t=pgNavConf.channel}}if("pos" in pgNavConf){if(typeof pgNavConf.pos==="string"){m=pgNavConf.pos}}if("kw" in pgNavConf){if(typeof pgNavConf.kw==="string"){o=pgNavConf.kw}}}else{var D=pgnav.getCurrentURL();var z=D.indexOf(".");if(z!=-1){var v=D.indexOf("http://");if(v!=-1){v=v+7}else{if(D.indexOf("https://")!=-1){v=D.indexOf("https://")+8}else{v=0}}localChanl=D.substring(v,z);var C=h[localChanl];if(C){t=C}}}if(t in b){a=b[t];g=a.sid}else{throw new Error("The channnel "+t+"is not exist in conf!")}var u=document.getElementById(i);if(j(u,d)){k(u,d)}if(j(u,c)){k(u,c)}e(u,m);var w=document.getElementById(i);var B=w.getElementsByTagName("span");for(var A=0;A<B.length;A++){if(j(B[A],p)){k(B[A],p)}}if(o.length>0){pgnav.updateTopNavLink(o)}if(a.useable===true){var y=document.getElementById(a.sid);if(!!y){e(y,p);var x=y.textContent||y.innerText||"";if(x!=""){y.innerHTML=x}}}}function n(){s();l()}n()})();
+</script>
+<!--输入框-->      
+<div class="search">
+        <p></p>
+<form action="http://image.panguso.com/imagesearchnew.htm" method="get">
+				<input type="hidden" name="n" value="50">
+				<input type="hidden" name="tw" value="1">
+				<input type="text" class="search_input2" id="q" name="q" value="" />
+				<input type="submit" class="search_btn2" value="搜索" />
+			</form>
+        
+    
+    </div>
+<!--2-LOGO+输入框+按钮 end-->   
+
+
+  </div>
+  <!--2-输入框+按钮 END-->
+
+<!--头部end-->
+<div class="fagui_h10"></div>
+<!--频道导航-->
+<div class="fagui_menu">
+	<div class="fagui_m01"><span>法规</span></div>
+	<div class="fagui_m02 fagui_m_iteam">
+		<div class="title_big"><span>知识</span></div>
+		<div class="title_small"><a href="#" target="_blank">宪法</a><a href="#" target="_blank">法律</a><a href="#" target="_blank">司法解释</a><br /><a href="#" target="_blank">法规</a><a href="#" target="_blank">规章</a><a href="#" target="_blank">条例条约</a></div>
+	</div>
+	<div class="fagui_m03 fagui_m_iteam">
+		<div class="title_big"><span>热点</span></div>
+		<div class="title_small"><a href="#" target="_blank">婚姻家庭</a><a href="#" target="_blank">交通事故</a><a href="#" target="_blank">劳动纠纷</a><br /><a href="#" target="_blank">刑事诉讼</a><a href="#" target="_blank">债权债务</a><a href="#" target="_blank">公司法务</a></div>
+	</div>
+	<div class="fagui_m04 fagui_m_iteam">
+		<div class="title_big"><span>查询</span></div>
+		<div class="title_small"><a href="#" target="_blank">法律法规</a><a href="#" target="_blank">裁判文书</a><br /><a href="#" target="_blank">律师律所</a><a href="#" target="_blank">热点罪名</a></div>
+	</div>
+	<div class="fagui_m05 fagui_m_iteam">
+		<div class="title_big"><span>资讯</span></div>
+		<div class="title_small"><a href="#" target="_blank">新法速递</a><a href="#" target="_blank">法律专题</a><br /><a href="#" target="_blank">法制时讯</a><a href="#" target="_blank">法与生活</a></div>
+	</div>
+</div>
+<!--频道导航结束-->
+<div class="fagui_h10"></div>
+<!--频道位置-->
+<div class="fagui_position"><a href="#" target="_blank">首页</a> > <a href="#" target="_blank">法规首页</a> >  法律 > 行政法 > 正文</div>
+<!--频道位置结束-->
+<div class="fagui_h10"></div>
+<!--法规频道最终页主内容-->
+<div class="fagui_wrap">
+	<!--法规--左侧-->
+	<div class="fagui_left">
+		<div class="fagui_zuizhong">
+			<div class="title_channel">
+				<span class="n_bg1"></span>
+				<span class="n_bg2">法规新闻</span>
+				<span class="n_bg3"></span>
+				<div class="fagui_clear"></div>
+			</div>
+			<div class="fagui_content">
+				<div class="fagui_h10"></div>
+				<div class="fagui_h10"></div>
+				<div class="article_title">油价26日迎年内首降 新定价机制或不出台</div>
+				<div class="fagui_h10"></div>
+				<div class="article_time">时间：<span class="times">2013年03月25日10:51</span>&nbsp;&nbsp;&nbsp;&nbsp;来源：<span class="author">经济参考报</span>
+					<div class="fagui_h10"></div>
+				</div>
+				<div class="article_content">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td align="left" valign="top">
+	<p>近一个月以来布伦特油价比年内高点下跌超过9%，业内人士预计，本周3月26日将迎来年内油价首降，幅度在300元吨，合计93#汽油下调0.23元升，0#柴油下调0.26元升，届时北上广等地93#汽油将回落至7元时代。</p>
+	
+	<p>2月25日国内油价上调之后的18个交易日里，有13个交易日布伦特原油(94.05,0.34,0.36%)价格都是在下降。截至3月22日收盘，5月交货的伦敦布伦特原油期货价格收于每桶107.47美元，较2月8日创出的年内高点已下跌了9.45%。
+	</p>
+	<p>三地原油变化率随之一路回落。大宗电子商务平台金银岛数据显示，3月21日三地(辛塔、迪拜、布伦特DTD)原油当日均价每桶105.685美元，近22日均价每桶108.629美元，较2月22日基准价下跌4.73%。而卓创资讯、中宇资讯等多家机构监测的数据也已大幅跌破了-4%的调价红线。</p>
+	
+	<p>“成品油零售价格下调的条件之一已经满足，另一个条件‘22个工作日’也将于3月26日满足。”卓创资讯分析师陈晴告诉《经济参考报》记者，后期国际油价将以下行为主，届时三地原油变化率将在-5.6%左右，那么根据此幅度预测此次成品油零售价格下调的幅度约在300元吨，合计93#汽油0.23元升，0#柴油在0.26元升。</p>
+	
+	<p>随着油价下调窗口渐行渐近，国内成品油市场上下游采购需求愈发萎缩。金银岛分析师张茜说，在已经步入本月下旬之际，中石化、中石油等主营销量完成不及半数，多数本月销量仅完成30%至40%左右。个别地区中石化、中石油等主营公司已经弃利润保销量，甚至对于客户可按量议价，对外挂价基本已失去指导意义。</p>
+	
+	<p>在这种情况下，全国汽柴油批发环节跌价空间提前释放，多数地区主营柴油价格已经跌至涨价前的水平。卓创资讯监测数据显示，截至3月22日收盘，国内20个省的主要城市主营销售公司国Ⅲ93#汽油批发均价在9644元吨，相当于2月22日临调价前的水平，平均批零价差在562元吨；而0#柴油批发均价在8296元吨，相当于2月15日春节假期的水平，平均批零价差在562元吨。</p>
+	
+	<p>而作为两会后的首次国内成品油价格调整，新定价机制是否会随之而出成为关注焦点。两会期间发改委负责人透露现行成品油定价机制将缩短调价周期，此外将取消4%的幅度，在一定周期内该调就调。</p>
+	
+	<p>陈晴分析认为，新定价机制若遵循以上两方面的内容调整，后期国内的价格将频繁调整，且若与国际油价接轨后，国民享受低油价的时期将一去不复返，这将会使我国的通胀加剧，并且使消费者的承受能力受挫。所以，定价机制完善改革需要在相关的补贴以及税收等配套措施完善后推出，可能不会随此次调价推出。</p>
+			</td>
+		</tr>
+	</table>
+					<div class="article_author">（责任编辑：窦明、傅小康)</div>
+					<div class="fagui_h10"></div>
+					<div class="fagui_h10"></div>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	<!--法规--左侧结束-->
+	<!--法规--右侧-->
+	<div class="fagui_right">
+		<!--二级新法速递-->
+		<div class="fagui_tit02">
+			<div class="fagui_xfkd"><a href="#" target="_blank">新法快递</a></div>
+			<div class="fagui_more"><a href="#" target="_blank">更多>></a></div>
+		</div>
+		<div class="fagui_h10"></div>
+		<div class="fagui_inner">
+			<ul class="fagui_list">
+				<li><a href="#" target="_blank">关于印发《出国留学经费管理办法》的通知</a></li>
+				<li><a href="#" target="_blank">国务院关于全国高标准农田建设总体规划的批复</a></li>
+				<li><a href="#" target="_blank">关于印发《中央和国家机关会议费管理办法》的通知</a></li>
+				<li><a href="#" target="_blank">关于印发《中央和国家机关会议费管理办法》的通知</a></li>
+				<li><a href="#" target="_blank">世界文化遗产申报工作规程（试行）</a></li>
+				<li><a href="#" target="_blank">国务院办公厅关于调整国家森林防火指挥部组成国家森林防火指挥部人员</a></li>
+			</ul>
+		</div>
+		<!--二级新法速递--end-->
+		<div class="fagui_h10"></div>
+		<!--法律咨询-->
+		<div class="fagui_tit03">
+			<div class="fagui_xfkd fagui_flzx"><a href="#" target="_blank">法律咨询</a></div>
+			<div class="fagui_more"><a href="#" target="_blank">更多>></a></div>
+		</div>
+		<div class="fagui_h10"></div>
+		<div class="fagui_inner">
+			<div class="fagui_qus">
+				<div class="fagui_as">问:</div>
+				<div class="fagui_as01">我家的房子建了50多年了，到现在摇摇欲坠了，想拆了重建，村里面说宅基地卖给人家了不可建。请问他们的做法合法吗？</div>
+			
+			</div>
+			<div class="fagui_h10"></div>
+			<div class="fagui_more"><a href="#" target="_blank">[回答]</a></div>
+		</div>
+		<div class="fagui_h10"></div>
+		<div class="fagui_line"></div>
+		<div class="fagui_h10"></div>
+		<div class="fagui_inner">
+			<div class="fagui_qus">
+				<div class="fagui_as">问:</div>
+				<div class="fagui_as01">我跟男朋友同居期间买了一套房子，因为感情不和分手了，房子怎么分割？</div>
+			
+			</div>
+			<div class="fagui_h10"></div>
+			<div class="fagui_more"><a href="#" target="_blank">[回答]</a></div>
+		</div>
+		<!--法律咨询--end-->
+		<div class="fagui_h10"></div>
+		<!--法规搜索-->
+		<div class="fagui_tit03">
+			<div class="fagui_xfkd fagui_fgss">法规热搜</div>
+			<div class="fagui_more"><a href="#" target="_blank">更多>></a></div>
+		</div>
+		<div class="fagui_h10"></div>
+		<div class="fagui_rslist">
+			<dl>
+				<dd>
+					<div class="fagui_img"><img src="static/image/fagui_rs01.jpg" width="50" height="50" /></div>
+					<div class="fagui_Itit">婚姻家庭</div>
+				</dd>
+				<dd>
+					<div class="fagui_img"><img src="static/image/fagui_rs02.jpg" width="50" height="50" /></div>
+					<div class="fagui_Itit">公司法律</div>
+				</dd>
+				<dd>
+					<div class="fagui_img"><img src="static/image/fagui_rs03.jpg" width="50" height="50" /></div>
+					<div class="fagui_Itit">医疗纠纷</div>
+				</dd>
+				<dd>
+					<div class="fagui_img"><img src="static/image/fagui_rs04.jpg" width="50" height="50" /></div>
+					<div class="fagui_Itit">合同纠纷</div>
+				</dd>
+				<dd>
+					<div class="fagui_img"><img src="static/image/fagui_rs05.jpg" width="50" height="50" /></div>
+					<div class="fagui_Itit">债权债务</div>
+				</dd>
+				<dd>
+				<div class="fagui_img"><img src="static/image/fagui_rs06.jpg" width="50" height="50" /></div>
+				<div class="fagui_Itit">劳动纠纷</div>
+				</dd>
+				<dd>
+				<div class="fagui_img"><img src="static/image/fagui_rs07.jpg" width="50" height="50" /></div>
+				<div class="fagui_Itit">房产纠纷</div>
+				</dd>
+				<dd>
+				<div class="fagui_img"><img src="static/image/fagui_rs08.jpg" width="50" height="50" /></div>
+				<div class="fagui_Itit">交通事故</div>
+				</dd>
+				<dd>
+				<div class="fagui_img"><img src="static/image/fagui_rs09.jpg" width="50" height="50" /></div>
+				<div class="fagui_Itit">征地拆迁</div>
+				</dd>
+				<dd>
+				<div class="fagui_img"><img src="static/image/fagui_rs10.jpg" width="50" height="50" /></div>
+				<div class="fagui_Itit">刑事诉讼</div>
+				</dd>
+				<dd>
+				<div class="fagui_img"><img src="static/image/fagui_rs11.jpg" width="50" height="50" /></div>
+				<div class="fagui_Itit">损失赔偿</div>
+				</dd>
+				<dd>
+				<div class="fagui_img"><img src="static/image/fagui_rs12.jpg" width="50" height="50" /></div>
+				<div class="fagui_Itit">工程纠纷</div>
+				</dd>
+			</dl>
+		</div>
+		<!--法规搜索--end-->
+	</div>
+	<!--法规--右侧结束-->
+	<div class="fagui_clear"></div>
+</div>
+<!--法规频道最终页主内容--end-->
+<!--底部-->
+<div class="all_nav">
+		<a href="#">首页</a>|
+		<a href="#">时政</a>|
+		<a href="#">地方</a>|
+		<a href="#">国际</a>|
+		<a href="#">国内</a>|
+		<a href="#">港澳台</a>|
+		<a href="#">财经</a>|
+		<a href="#">社会</a>|
+		<a href="#">法制</a>|
+		<a href="#">军事</a>|
+		<a href="#">体育</a>|
+		<a href="#">房产</a>|
+		<a href="#">汽车</a>|
+		<a href="#">娱乐</a>|
+		<a href="#">时尚</a>|
+		<a href="#">教育</a>|
+		<a href="#">健康</a>|
+		<a href="#">科技</a>|
+</div>
+<div class="footer">
+<p>
+<a t="" onclick="javascript:window.external.AddFavorite('http://www.chinaso.com','国家搜索')" href="#">设国家搜索为主页</a>
+<span>|</span>
+<a href="#">关于我们</a>
+<span>|</span>
+<a href="#">联系我们</a>
+<span>|</span>
+<a href="#">版权声明</a>
+<span>|</span>
+<a href="#">法律顾问</a>
+<span>|</span>
+<a href="#">广告服务</a>
+<span>|</span>
+<a href="#">帮助中心</a>
+</p>
+<span>©2013 使用国家搜索前必读 京ICP证 号</span>
+</div>
+<!--底部end-->
+</body>
+</html>

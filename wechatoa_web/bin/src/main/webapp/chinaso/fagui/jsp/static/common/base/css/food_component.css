@@ -1,0 +1,88 @@
+﻿
+*,
+body{
+	padding: 0px;
+	margin:0 auto;
+    font-family:"微软雅黑",Microsoft Yahei;
+}
+img {
+    border: none;
+}
+.bold{
+	font-weight:bold;
+}
+.left{
+	float:left;
+	overflow:hidden;
+}
+.mid{
+	float:left;
+	margin-left:10px;
+}
+.right{
+	float:right;
+}
+.no_Point{
+	background:none;
+	padding:0px;
+}
+.hidden{
+	display:none;
+}
+.limar{
+	display:block;
+}
+.noline{
+	border:0px;
+}
+.hr_10,
+.hr_5,
+.hr_3,
+.hr_1 {
+	background-image:none;
+	height:10px;
+	clear:both;
+	font-size:1px;
+	line-height:1px;
+	overflow:hidden;
+}
+.hr_5{
+	height:5px;
+}
+.hr_3{
+	height:3px;
+}
+.hr_1{
+	height:1px;
+}
+.line,
+.line_2{
+	border-bottom:1px solid #747979;
+	height:1px;
+	line-height:1px;
+}
+.line_2{
+	border-bottom:1px dotted #747979;
+}
+.blue_line{
+	border:1px solid #0850AB;
+}
+.f9a_line{
+	border:1px solid #9A9A9A;
+}
+.pannel-image{ float:left; padding-right:10px;}
+
+#idTRSNavigator{
+	display:none;
+}
+
+#bottom {
+	text-align:center;
+}
+.main_colum{ width:980px; overflow:hidden;}
+.pannel {background:#FAFAFA;border: 1px solid #D3D3D3; height:auto;}
+.pannel_inner{ padding:0 10px;}
+.summary02{ line-height:20px;font-size:12px;}
+.summary02 a{ color:#666; }
+.font12{ font-family:"宋体"; font-size:12px;}
+.font14{ font-family:"宋体"; font-size:14px;}
