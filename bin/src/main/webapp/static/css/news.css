@@ -1,0 +1,173 @@
+body{background:#eee; font-family:"Microsoft YaHei","Times New Roman",Georgia,Serif; font-size:14px;}
+div,form,img,ul,ol,li,dl,dt,dd,p{margin: 0; padding: 0; border: 0;}
+/*登录页*/
+.m_l { margin-left: 10px;}
+#login {width:100%; height: 100%; text-align: center;}
+#login .container {margin:0 auto; width:500px; height: 500px; text-align: center;}
+#login .container h1 { font-size: 58px; color: #bdbdbd;}
+#login .container h4 { font-size: 32px; color: #dadada;}
+#login .user { width: 220px; height: 32px;line-height: 32px; background: #fff url(../image/login_user.png) no-repeat 2px 2px; border:1px solid #33c4d9; padding-left: 34px;  position: absolute; left: 0; top:0;}
+#login .container form { width:350px; height: 400px; margin: 0 auto; position: relative;}
+#login .password { width: 220px; height: 32px; line-height: 32px; background: #fff url(../image/login_password.png) no-repeat 2px 2px; border:1px solid #33c4d9; padding-left: 34px;position: absolute; left: 0; top:45px;}
+#login .user-login { width:80px; height: 80px; border:none; line-height: 80px; color:#fff; font-size: 20px; background: #33c4d9; position: absolute; right: 0; top: 0; cursor: pointer;}
+#login .remember { width: 345px; height: 35px; background: #5d5d5d; position: relative; left: 0; top: 90px;text-align: left; color: #9e9e9e; padding-top: 10px; padding-left: 5px;}
+/*主页面公共部分*/
+.clearfix:after {content: " ";display: block;clear: both; height: 0;}
+.news-dig-up { width:1000px; margin:0 auto; text-align: center; background: #333;}
+.news-dig-up .header { width:100%; height: 120px; clear: both; border-top: 5px solid #33c4d9; position: relative; zoom:1; overflow: hidden; line-height: 120px; color: #31a0b1; font-size: 38px; text-align: left;}
+.news-dig-up .header span { font-size: 20px; color: #8e8c8d;}
+.news-dig-up .container .left { float: left; width: 200px; height: auto;}
+.news-dig-up .container .left a { text-decoration:none; color:#fff;}
+.news-dig-up .container .right { float: right; width: 800px; height: auto; background: #f7f7f7; padding-bottom: 50px;}
+.news-dig-up .title { position: absolute; left: 20px;}
+.news-dig-up .exit { position: absolute; right: 20px; color:#555; font-size: 14px;_top:40px;}
+.news-dig-up .exit a{ color:#555; text-decoration:none;}
+/*线索查看 词墙*/
+#wordwall .user { text-align: center; color: #535353; margin:10px; border-bottom: #403e3e;}
+#wordwall .view-clue { background: #33c4d9; padding: 20px; color: #fff; border: 2px solid #06b3cc; border-right: 1px solid #eee; }
+#wordwall .my-adopt { background: #4d4d4d; padding: 20px; color: #636363; cursor: pointer;}
+#wordwall .headbar {height: 50px; position: relative; line-height: 50px;}
+#wordwall .viewclue-btn { position: absolute; left: 5px;}
+#wordwall .viewmore-btn {position: absolute; right: 5px; cursor: pointer;_top:10px;}
+#wordwall .viewmore-btn a {text-decoration: none;color: #000;}
+/*线索查看 列表*/
+#wordList .user { text-align: center; color: #535353; margin:10px; border-bottom: #403e3e;}
+#wordList .view-clue { background: #33c4d9; padding: 20px; color: #fff; border: 2px solid #06b3cc; border-right: 1px solid #eee; }
+#wordList .my-adopt { background: #4d4d4d; padding: 20px; color: #636363; cursor: pointer;}
+#wordList .headbar {height: 50px; position: relative; line-height: 50px; zoom:1; overflow: hidden;}
+#wordList .viewclue-btn { position: absolute; left: 5px; pointer; _top:10px;}
+#wordList .viewmore-btn {position: absolute; right: 5px; cursor: pointer; _top:10px;}
+#wordList .viewmore-btn a {text-decoration: none;color: #000;}
+#wordList .right .list { margin: 10px;}
+#wordList .list table { border: 1px solid #d1d2d2; width:780px;}
+#wordList .list table th { font-size: 18px; padding: 10px;border: 1px solid #d1d2d2;}
+#wordList .list table td { border: 1px solid #d1d2d2; padding: 10px; font-size: 14px;}
+#wordList .list table .blue { background: #bce0e5;}
+#wordList .list table .grey { background: #eee;}
+#wordList .page { margin-top: 20px;}
+#wordList .page .n{ cursor: pointer; display: inline-block;vertical-align: text-bottom; height: 22px;text-align: center;line-height: 22px;text-decoration: none;overflow: hidden; margin-right: 5px; color: #595757;}
+#wordList .page a span{ display: block; width: 30px; }
+#wordList .page .n .pc { background: #949494; color: #fff }
+#wordList .page .pg { border: 1px solid #ececec; background: #fff; width: 50px; line-height: 22px; }
+#wordList .list .page .pageturn { width:40px; height: 30px; line-height: 22px; background: #9fa0a0; color:#fff; border: none;}
+#wordDetail .user { text-align: center; color: #535353; margin:10px; border-bottom: #403e3e;}
+#wordDetail .view-clue { background: #33c4d9; padding: 20px; color: #fff; border: 2px solid #06b3cc; border-right: 1px solid #eee; }
+#wordDetail .my-adopt { background: #4d4d4d; padding: 20px; color: #636363; cursor: pointer;}
+#wordDetail .headbar {height: 50px; position: relative; line-height: 50px;}
+#wordDetail .viewclue-btn { position: absolute; left: 5px;_top:10px;}
+#wordDetail .viewmore-btn {position: absolute; right: 5px; cursor: pointer;_top:10px;}
+#wordDetail .viewmore-btn a {text-decoration: none;color: #000;}
+#wordDetail .general { position: relative; z-index: 1;width: 780px; background: #fff; max-height: 180px; margin: 10px; margin-bottom: 30px; overflow: hidden;zoom:1; clear: both;}
+#wordDetail .general .g_header {  margin: 10px; padding: 8px; line-height: 20px; zoom:1; overflow: hidden; border-bottom: 1px solid #eee;}
+#wordDetail .general .g_title { font-size: 18px; float: left;}
+#wordDetail .general .g_adopt { width:80px; height: 20px; line-height:20px; background: #65c8d0; color: #fff;font-size: 12px; border: none;}
+#wordDetail .general .g_time { float: right; color: #999; margin-right: 10px;}
+#wordDetail .general .g_pop { position:absolute; left: 245px; top:50px; z-index: 2; text-align: center; border:1px solid #65c8d0; background: #fff; width: 280px; text-align: center;}
+#wordDetail .general .g_pop span { display: block; background: url(../image/success.png) left center no-repeat; margin-left: 20px; margin-top: 8px; width: 280px; height: 40px; line-height: 40px; text-align: center;}
+#wordDetail .general .g_pop input { display:inline-block; width:60px; height:22px; line-height:22px; margin:10px 0; border:none; color:#fff; }
+#wordDetail .general .g_pop input.g_pop_sure { background:#ff9934; }
+#wordDetail .general .g_pop input.g_pop_cancel { background:#d0d0d0;}
+#wordDetail .general .g_pop_success { position:absolute; left: 245px; top:50px; z-index: 2; text-align: center; border:1px solid #65c8d0; background: #fff; width: 170px; text-align: center;}
+#wordDetail .general .g_pop_success span { display: block; background: url(../image/success.png) left center no-repeat; margin-left: 20px; margin-top: 8px; margin-bottom:10px; width: 170px; height: 40px; line-height: 40px; text-align: center;}
+#wordDetail .general .g_content { margin: 10px; padding: 8px; zoom:1; overflow: hidden;}
+#wordDetail .general .g_content .g_image { float: left;}
+#wordDetail .general .g_content .g_sub { float: left; width: 380px; line-height:22px; text-align: left; margin-left: 20px;}
+#wordDetail .general .g_content .g_btn { float: left; margin-left: 20px; width: 200px; zoom:1; overflow: hidden;}
+#wordDetail .general .g_content .g_trend { float:left; width: 90px; background: #bfeeff; overflow:hidden;}
+#wordDetail .general .g_content .g_trend img { height: 60px;}
+#wordDetail .general .g_content .g_weibo { float:left; width: 90px; background: #bfff90 ;margin-left: 10px; overflow:hidden;}
+#wordDetail .general .g_content .g_weibo img { height: 60px;}
+#wordDetail .general .g_content .g_trend_filter { width: 90px; height: 20px; background: #65c8d0;}
+#wordDetail .general .g_content .g_weibo_filter { width: 90px; height: 20px; background: #8dc556;}
+#wordDetail .clue_content { width: 780px; background: #fff; max-height: 410px; margin: 10px; margin-bottom: 30px; overflow: hidden;zoom:1; clear: both;}
+#wordDetail .clue_content .c_header { height: 46px; line-height: 46px; font-size: 18px; text-align: left; color: #000; background: #bfeeff; }
+#wordDetail .clue_content .c_header img { vertical-align: middle; margin-left: 10px;}
+#wordDetail .clue_content .c_content .c_pic { width:465px; height: 320px; border:1px solid #eee; float: left;}
+#wordDetail .clue_content .c_content  { padding: 20px; zoom:1; overflow: hidden;}
+#wordDetail .clue_content .c_content .c_data { float: left; margin-left: 10px; width: 260px; zoom:1; overflow: hidden;}
+#wordDetail .clue_content .c_content .c_data .c_data_des { zoom:1; overflow: hidden;}
+#wordDetail .clue_content .c_content .c_data .c_data_des div { float: left; width:83px; line-height:50px; height: 100px; color: #fff; font-size: 18px; zoom:1; overflow: hidden;}
+#wordDetail .clue_content .c_content .c_data .c_data_des .c_speed { background: #e2d800; }
+#wordDetail .clue_content .c_content .c_data .c_data_des .c_live { background: #f0b300; margin-left: 5px;}
+#wordDetail .clue_content .c_content .c_data .c_data_des .c_follow { background: #ff6d1d; margin-left: 5px;}
+#wordDetail .clue_content .c_content .c_data .c_data_des div p { font-size: 12px; line-height:20px; margin: 0 5px;}
+#wordDetail .clue_content .c_content .c_data_value { width: 260px; background: #efefef; margin-top: 10px; text-align: left;}
+#wordDetail .clue_content .c_content .c_data_value .c_user{ height: 40px; line-height: 40px; margin: 10px; }
+#wordDetail .clue_content .c_content .c_data_value .c_value { margin-left: 10px; margin-right: 10px;}
+#wordDetail .clue_content .c_content .c_data_value .c_progress {  height: 10px; background: #d3d3d4; margin: 20px 0 10px 0;}
+#wordDetail .clue_content .c_content .c_data_value .c_progress_green { height: 10px; background: #8dc556; float: left; zoom:1; overflow: hidden;}
+#wordDetail .clue_content .c_content .c_grad {height: 30px;}
+#wordDetail .clue_content .c_content .c_grad p { float: left; width: 80px;}
+#wordDetail .weibo_content { width: 780px; background: #fff;margin: 10px; padding-bottom: 50px; overflow: hidden;zoom:1; clear: both;}
+#wordDetail .weibo_content  .w_header { height: 46px; line-height: 46px; font-size: 18px; text-align: left; color: #000; background: #bfeeff; }
+#wordDetail .weibo_content  .w_header img { vertical-align: middle; margin-left: 10px;}
+#wordDetail .weibo_content  .w_header span a { font-size:14px; text-decoration:none; margin-left:20px;  }
+#wordDetail .weibo_content  .w_content  { list-style-type: none; margin: 10px; zoom:1; overflow: hidden;}
+#wordDetail .weibo_content  .w_content li { border-bottom: 1px solid #eee; padding: 10px; zoom:1; overflow: hidden; }
+#wordDetail .weibo_content  .w_content li div { float: left; }
+#wordDetail .weibo_content  .w_content li div.w_img { width:80px;}
+#wordDetail .weibo_content  .w_content li div.w_data { width:480px; text-align: left; margin-left: 10px;}
+#wordDetail .weibo_content  .w_content li div.w_detail { width:160px; margin-left: 10px;}
+#wordDetail .weibo_content  .w_content li div.w_detail .t_c{ height: 30px;}
+#wordDetail .weibo_content  .w_content li div.w_detail .t_c div { float: left; text-align:left; width: 75px; background: #b1deee;}
+#wordDetail .weibo_content  .w_content li div.w_data .w_title { font-size: 18px; }
+#wordDetail .weibo_content  .w_content li div.w_data .w_word { line-height: 20px; margin-top: 10px;}     
+#wordDetail .weibo_content  .w_content li div.w_detail .w_view_detail { background: #8dc556; height: 30px; line-height: 30px; color: #fff; margin-bottom: 10px;} 
+#wordDetail .weibo_content  .w_content li div.w_detail .w_view_detail a { text-decoration:none; color:#fff;}
+/*我的采纳列表*/
+#my_adopt .user { text-align: center; color: #535353; margin:10px; border-bottom: #403e3e;}
+#my_adopt .view-clue { background:#4d4d4d ; padding: 20px; color: #fff; cursor: pointer; }
+#my_adopt .my-adopt { background: #33c4d9; padding: 20px; color: #636363; border: 2px solid #06b3cc; border-right: 1px solid #eee; }
+#my_adopt .headbar {height: 50px; position: relative; line-height: 50px;}
+#my_adopt .viewclue-btn { position: absolute; left: 5px;}
+#my_adopt .viewmore-btn {position: absolute; right: 5px; cursor: pointer;_top:10px;}
+#my_adopt .viewmore-btn a {text-decoration: none;color: #000;}
+#my_adopt .adopt-list { margin: 10px; text-align: left;}
+#my_adopt .adopt-list .a_title { font-size: 14px; text-align: left; line-height: 20px; margin: 10px;} 
+#my_adopt .adopt-list .a_intro { width: 100%; margin-bottom: 10px;}
+#my_adopt .adopt-list ul { list-style-type: none; }
+#my_adopt .adopt-list ul li {  padding: 20px; }
+#my_adopt .adopt-list ul li.alist { background: #ebebeb;}
+#my_adopt .adopt-list ul li.alist .a_intro { zoom:1; overflow: hidden;}
+#my_adopt .adopt-list ul li.alist .a_intro div { float: left;}
+#my_adopt .adopt-list ul li.alist .a_header { width: 360px;}
+#my_adopt .adopt-list ul li.alist .a_header_title { font-size: 20px; line-height: 24px}
+#my_adopt .adopt-list ul li.alist .a_header_time { font-size: 12px; line-height: 20px;}
+#my_adopt .adopt-list ul li.alist .a_cancel { width: 180px;}
+#my_adopt .adopt-list ul li.alist .a_cancel a { text-decoration:none;}
+#my_adopt .adopt-list ul li.alist .a_cancel input { border:none; width: 100px; line-height:20px; background: #65c8d0; text-align: center; color:#fff;}
+#my_adopt .adopt-list ul li.alist .a_operate { width: 180px; height: 100%;}
+#my_adopt .adopt-list ul li.alist .a_operate input {width: 80px; border: none; height:40px; line-height:40px; color: #fff; text-align: center;}
+#my_adopt .adopt-list ul li.alist .a_blue { background: #66cccc;}
+#my_adopt .adopt-list ul li.alist .a_orange { background: #ff9933;}
+#my_adopt .adopt-list ul li.alist .a_content { line-height: 20px;}
+#my_adopt .page { margin-top: 20px;}
+#my_adopt .page .n{ display: inline-block; vertical-align: text-bottom; height: 22px;text-align: center;line-height: 22px;text-decoration: none;overflow: hidden; margin-right: 5px; color: #595757;}
+#my_adopt .page a span{ display: block; width: 22px; }
+#my_adopt .page .n .pc { background: #949494; color: #fff }
+#my_adopt .page .pg { border: 1px solid #ececec; background: #fff; width: 50px; line-height: 22px; }
+#my_adopt .list .page .pageturn { width:40px; height: 30px; line-height: 22px; background: #9fa0a0; color:#fff; border: none;}
+#my_adopt .g_pop { position:absolute; left:550px;top:300px; z-index: 2; text-align: center; border:1px solid #65c8d0; background: #fff; width: 280px; text-align: center;}
+#my_adopt .g_pop span { display: block; background: url(../image/success.png) left center no-repeat; margin-left: 20px; margin-top: 8px; width: 280px; height: 40px; line-height: 40px; text-align: center;}
+#my_adopt .g_pop input { display:inline-block; width:60px; height:22px; line-height:22px; margin:10px 0; border:none; color:#fff; }
+#my_adopt .g_pop input.g_pop_sure { background:#ff9934; }
+#my_adopt .g_pop input.g_pop_cancel { background:#d0d0d0;}
+#my_adopt .g_pop_success { position:absolute; left:600px;top:300px; z-index: 2; text-align: center; border:1px solid #65c8d0; background: #fff; width: 170px; text-align: center;}
+#my_adopt .g_pop_success span { display: block; background: url(../image/success.png) left center no-repeat; margin-left: 20px; margin-top: 8px; margin-bottom:10px; width: 170px; height: 40px; line-height: 40px; text-align: center;}
+/*弹出层*/
+.pop_clue { background:#fff; border:2px solid #eee; height:500px; width:800px; zoom:1; overflow:hidden;}
+.pop_clue .tit {zoom:1; overflow:hidden; height:60px;}
+.pop_clue .tit h3 { float:left; margin:10px;; line-height:40px;}
+.pop_clue .tit .tipclose{ background:#fff url(../image/close.png); margin:10px; float:right; width:32px; height:32px; }
+.pop_clue .clue_pic_content {margin:10px; zoom:1; overflow:hidden; height:430px;}
+.pop_clue .clue_pic_content .clue_pic {width:600px; height:400px; border:1px solid #eee;}
+.pop_clue .clue_pic_content .clue_note { margin-left:10px;} 
+.pop_clue .clue_pic_content .pic_left { float:left; zoom:1;overflow:hidden; width:620px; height:500px;}
+.pop_clue .clue_pic_content .pic_right { float:left; zoom:1; overflow:hidden; color:#fff; text-align:center;}
+.pop_clue .clue_pic_content .pic_right .right_blue { width:150px; height:100px; background:#4fc1e5; margin-bottom:10px; position:relative;}
+.pop_clue .clue_pic_content .pic_right .right_yellow { width:150px; height:100px; background:#e2d700; margin-bottom:10px; position:relative;}
+.pop_clue .clue_pic_content .pic_right .right_orange { width:150px; height:100px; background:#f0b300; margin-bottom:10px; position:relative;}
+.pop_clue .clue_pic_content .pic_right .pic_data { position:absolute; top:25px; left:0;width:150px;height:38px; line-height:38px; font-size:30px;}
+.pop_clue .clue_pic_content .pic_right .pic_intro {position:absolute; top:60px;left:0; width:150px; height:38px; line-height:38px; font-size:12px;}
+.pop_clue .clue_pic_content .pic_right .speed_small { position:absolute; right:0; top:0; width:68px; height:20px; line-height:20px; background:#3ab54b; color:#ffff01;}
+.pop_clue .clue_pic_content .pic_right .data_small {position:absolute; right:0; top:0; width:68px; height:20px; line-height:20px; background:#ed1b24; color:#ffff01;}

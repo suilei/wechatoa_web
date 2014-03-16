@@ -1,0 +1,1786 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="x-ua-compatible" content="IE=7"/> 
+<link rel="stylesheet" href="http://www.chinaso.com/common/base/css/base.css"></link>
+<link rel="stylesheet" href="http://www.chinaso.com/common/base/css/component.css"></link>
+<link href="http://www.chinaso.com/common/base/css/fagui_component.css" type="text/css" rel="stylesheet"/>
+<link href="static/css/fagui_index.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="static/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="static/js/fagui_banner.js"></script>
+<script type="text/javascript" src="static/js/fagui_leftNav.js"></script>
+<script type="text/javascript" src="static/js/fagui_tab.js"></script>
+<script type="text/javascript" src="static/js/fagui_scrollPic.js"></script>
+<script type="text/javascript" src="static/js/ie6Fixpng.js"></script>
+<script type="text/javascript" src="static/js/DD_belatedPNG_0.0.8a-min.js"></script>
+
+<title>法规频道首页</title>
+</head>
+
+<body class="fagui_all">
+<!--头部-->
+<!--1-顶部-->    
+<div class="top" id="jToolbar"><script src="http://www.panguso.com/common/component/toolbar/toolbar.js"></script></div>
+<!--1-顶部 end--> 
+
+<!--2-LOGO+输入框+按钮-->      
+<div class="head">
+    <!--logo插件-->    
+<a href="#" class="logo"></a>
+ <!--导航-->  
+<p class="nav" id="nav_wrapper">
+				<span id="nav_news"><a href="http://news.chinaso.com" id="nav_news_link">新闻</a></span>
+				<span id="nav_web"><a href="http://web.chinaso.com" id="nav_web_link">网页</a></span>
+				<span id="nav_image"><a href="http://image.chinaso.com" id="nav_image_link">图片</a></span>
+				<span id="nav_journal"><a href="http://nav.chinaso.com" id="nav_nav_link">导航</a></span>
+				<span id="nav_community"><a href="http://house.chinaso.com" id="nav_house_link">房产</a></span>
+
+				
+			</p>
+
+<script type="text/javascript">
+(function(){var b={news:{title:"新闻",sid:"nav_news",lid:"nav_news_link",url:"#",sprefix:"",useable:true},web:{title:"网页",sid:"nav_web",lid:"nav_web_link",url:"#",sprefix:"",useable:true},image:{title:"图片",sid:"nav_image",lid:"nav_image_link",url:"#",sprefix:"",useable:true},journal:{title:"报刊",sid:"nav_journal",lid:"nav_journal_link",url:"#",sprefix:"",useable:true},community:{title:"社区",sid:"nav_community",lid:"nav_community_link",url:"#",sprefix:"",useable:true},voice:{title:"音频",sid:"nav_voice",lid:"nav_voice_link",url:"#",sprefix:"",useable:true},video:{title:"视频",sid:"nav_video",lid:"nav_video_link",url:"#",sprefix:"",useable:false},app:{title:"应用",sid:"nav_app",lid:"nav_app_link",url:"#",sprefix:"",useable:true},people:{title:"人物",sid:"nav_people",lid:"nav_people_link",url:"#",sprefix:"",useable:true},more:{title:"更多",sid:"nav_more",lid:"nav_more_link",url:"#",sprefix:"",useable:true}},h={news:"news",search:"web",image:"image",photo:"image",video:"video",music:"music",d:"web",map:"map",book:"book",app:"app"},i="nav_wrapper",c="nav_index",d="nav_result",p="cur",r="web";function s(){var w=document.getElementById(i),v="",u;if(!w){v='<p class="nav" id="nav_wrapper">';for(u in b){if(b.hasOwnProperty(u)&&b[u].useable===true){v+='<span id="'+b[u].sid+'"><a href="'+b[u].url+'" id="'+b[u].lid+'">'+b[u].title+"</a></span>"}}v+="</p>";document.writeln(v)}}function f(u){return u.className.replace(/\s+/," ").split(" ")}function j(w,x){var v=f(w);for(var u=0;u<v.length;u++){if(v[u]===x){return true}}return false}function e(u,v){u.className+=(u.className?" ":"")+v;return true}function k(w,x){var v=f(w);var y=v.length;for(var u=y-1;u>=0;u--){if(v[u]===x){delete (v[u])}}w.className=v.join(" ");return(y==v.length?false:true)}function q(){return window.location.href}if(!window.pgnav){window.pgnav={}}window.pgnav.removeClassName=k;window.pgnav.addClassName=e;window.pgnav.hasClassName=j;window.pgnav.getCurrentURL=q;window.pgnav.updateTopNavLink=function(x){if(typeof x==="string"&&x.length>0){for(var u in b){if(b.hasOwnProperty(u)&&b[u].useable===true){var y=document.getElementById(b[u].lid);if(typeof y==="object"&&y){var v=y.href.indexOf("?");var w=y.href;if(v!=-1){w=y.href.substring(0,v);y.href=w+"?q="+x}else{y.href=w+b[u].sprefix+"?q="+x}}}}}};var t=r,m=d,o="",g="",a=null;function l(){if(typeof pgNavConf==="object"&&pgNavConf){if("channel" in pgNavConf){if(typeof pgNavConf.channel==="string"){t=pgNavConf.channel}}if("pos" in pgNavConf){if(typeof pgNavConf.pos==="string"){m=pgNavConf.pos}}if("kw" in pgNavConf){if(typeof pgNavConf.kw==="string"){o=pgNavConf.kw}}}else{var D=pgnav.getCurrentURL();var z=D.indexOf(".");if(z!=-1){var v=D.indexOf("http://");if(v!=-1){v=v+7}else{if(D.indexOf("https://")!=-1){v=D.indexOf("https://")+8}else{v=0}}localChanl=D.substring(v,z);var C=h[localChanl];if(C){t=C}}}if(t in b){a=b[t];g=a.sid}else{throw new Error("The channnel "+t+"is not exist in conf!")}var u=document.getElementById(i);if(j(u,d)){k(u,d)}if(j(u,c)){k(u,c)}e(u,m);var w=document.getElementById(i);var B=w.getElementsByTagName("span");for(var A=0;A<B.length;A++){if(j(B[A],p)){k(B[A],p)}}if(o.length>0){pgnav.updateTopNavLink(o)}if(a.useable===true){var y=document.getElementById(a.sid);if(!!y){e(y,p);var x=y.textContent||y.innerText||"";if(x!=""){y.innerHTML=x}}}}function n(){s();l()}n()})();
+</script>
+<!--输入框-->      
+<div class="search">
+        <p></p>
+<form action="http://image.panguso.com/imagesearchnew.htm" method="get">
+				<input type="hidden" name="n" value="50">
+				<input type="hidden" name="tw" value="1">
+				<input type="text" class="search_input2" id="q" name="q" value="" />
+				<input type="submit" class="search_btn2" value="搜索" />
+			</form>
+        
+    
+    </div>
+<!--2-LOGO+输入框+按钮 end-->   
+
+
+  </div>
+  <!--2-输入框+按钮 END-->
+<div class="fagui_mainNav_wrap">
+    <div class="fagui_mainNav">
+        <a href="#">首页</a>|
+        <a href="#">时政</a>|
+        <a href="#">地方</a>|
+        <a href="#">国际</a>|
+        <a href="#">国内</a>|
+        <a href="#">港澳台</a>|
+        <a href="#">财经</a>|
+        <a href="#">社会</a>|
+        <a href="#">法制</a>|
+        <a href="#">军事</a>|
+        <a href="#">体育</a>|
+        <a href="#">房产</a>|
+        <a href="#" class="fagui_currnav">国情</a>|
+        <a href="#">娱乐</a>|
+        <a href="#">时尚</a>|
+        <a href="#">教育</a>|
+        <a href="#">健康</a>|
+        <a href="#">科技</a>
+    </div>
+</div>
+<!--头部end-->
+<div class="fagui_h10"></div>
+<!--频道导航-->
+<div class="fagui_menu">
+	<div class="fagui_m01"><span>法规</span></div>
+	<div class="fagui_m02 fagui_m_iteam">
+		<div class="title_big"><span>知识</span></div>
+		<div class="title_small"><a href="#" target="_blank">宪法</a><a href="#" target="_blank">法律</a><a href="#" target="_blank">司法解释</a><br /><a href="#" target="_blank">法规</a><a href="#" target="_blank">规章</a><a href="#" target="_blank">条例条约</a></div>
+	</div>
+	<div class="fagui_m03 fagui_m_iteam">
+		<div class="title_big"><span>热点</span></div>
+		<div class="title_small"><a href="#" target="_blank">婚姻家庭</a><a href="#" target="_blank">交通事故</a><a href="#" target="_blank">劳动纠纷</a><br /><a href="#" target="_blank">刑事诉讼</a><a href="#" target="_blank">债权债务</a><a href="#" target="_blank">公司法务</a></div>
+	</div>
+	<div class="fagui_m04 fagui_m_iteam">
+		<div class="title_big"><span>查询</span></div>
+		<div class="title_small"><a href="#" target="_blank">法律法规</a><a href="#" target="_blank">裁判文书</a><br /><a href="#" target="_blank">律师律所</a><a href="#" target="_blank">热点罪名</a></div>
+	</div>
+	<div class="fagui_m05 fagui_m_iteam">
+		<div class="title_big"><span>资讯</span></div>
+		<div class="title_small"><a href="#" target="_blank">新法速递</a><a href="#" target="_blank">法律专题</a><br /><a href="#" target="_blank">法制时讯</a><a href="#" target="_blank">法与生活</a></div>
+	</div>
+</div>
+<!--频道导航结束-->
+<div class="fagui_h10"></div>
+<!--法规频道首页主内容-->
+<div class="fagui_wrap">
+<!--频道首页主内容****侧边导航***banner*-->
+	<div class="fagui_row1">
+		<div class="fagui_slide_left">
+            <!--分类开始-->
+            <div class="fagui_sliderNav">
+                <div class="fagui_sliderNav_tit"><h3>法律知识分类</h3></div>
+                <div class="fagui_nav">
+                    <ul class="fagui_nav_wrap">
+                        <li class="fagui_item">
+                            <div class="fagui_inner"><a href="#">宪法</a></div>
+                            <div class="fagui_outer">
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">政府白皮书</a></b>
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">政策解读</a></b>
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">政治制度</a></b>
+                                    <a href="#">宪法制度</a>|
+                                    <a href="#">经济学家</a>|
+                                    <a href="#">科学家</a>|
+                                    <a href="#">哲学家</a>|
+                                    <a href="#">文学家</a>|
+                                    <a href="#">影视名人</a>|
+                                    <a href="#">财富人物</a>|
+                                    <a href="#">传媒人物</a>|
+                                    <a href="#">历史名人</a>|
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">政府白皮书</a></b>
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">政策解读</a></b>
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">政治制度</a></b>
+                                    <a href="#">宪法制度</a>|
+                                    <a href="#">经济学家</a>|
+                                    <a href="#">科学家</a>|
+                                    <a href="#">哲学家</a>|
+                                    <a href="#">文学家</a>|
+                                    <a href="#">影视名人</a>|
+                                    <a href="#">财富人物</a>|
+                                    <a href="#">传媒人物</a>|
+                                    <a href="#">历史名人</a>|
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">政府白皮书</a></b>
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">政策解读</a></b>
+                                </div>
+                            </div>
+                        </li>	
+                        <li class="fagui_item">
+                            <div class="fagui_inner"><a href="#">民商法类</a></div>
+                            <div class="fagui_outer">
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">经济数据</a></b>
+                                    <a href="#">国民经济统计数字</a>|
+                                    <a href="#">全国年度统计公报</a>|
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">经济大讲堂</a></b>
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">行业经济</a></b>
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">经济区域</a></b>
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">中央经济会议</a></b>
+                                </div>
+                            </div>				
+                        </li>	
+                        <li class="fagui_item">
+                            <div class="fagui_inner"><a href="#">行政法类</a></div>
+                            <div class="fagui_outer">
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">交通事故</a></b>
+    
+                                    <a href="#">交通事故处理</a>|
+                                    <a href="#">交通事故赔偿</a>|
+                                    <a href="#">交通法规</a>|
+                                    <a href="#">交通事故案例</a>|
+                                    <a href="#">交通事故保险</a>|
+                                    <a href="#">交通事故鉴定</a>|
+                                    <a href="#">事故责任认定</a>
+                                    
+                                    <span class="more"><a href="#" target="_blank">更多>></a></span>
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">医疗事故</a></b>
+                                    
+                                    <a href="#">医疗事故案例</a>|
+                                    <a href="#">医疗事故鉴定</a>|
+                                    <a href="#">医疗事故赔偿</a>|
+                                    <a href="#">医疗纠纷</a>|
+                                    <a href="#">医疗事故索赔</a>|
+                                    <a href="#">医疗法规</a>|
+                                    <a href="#">医疗事故处理</a>
+                                    <span class="more"><a href="#" target="_blank">更多>></a></span>
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">行政法律</a></b>
+                                    
+                                    <a href="#">行政主体</a>|
+                                    <a href="#">行政许可法</a>|
+                                    <a href="#">行政处罚法</a>|
+                                    <a href="#">行政复议法</a>|
+                                    <a href="#">行政诉讼法</a>|
+                                    <a href="#">行政合同</a>|
+                                    <a href="#">行政强制</a>|
+                                    <a href="#">政府采购</a>
+                                    <span class="more"><a href="#" target="_blank">更多>></a></span>
+                                </div>
+                                
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">行政许可法</a></b>
+                                    
+                                    <a href="#">行政许可分类</a>|
+                                    <a href="#">行政许可设定</a>|
+                                    <a href="#">行政许可期限</a>|
+                                    <a href="#">行政许可变更</a>|
+                                    <a href="#">许可撤销注销</a>|
+                                    <a href="#">行政许可实施主体</a>
+                                    <span class="more"><a href="#" target="_blank">更多>></a></span>
+                                </div>
+                                
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">行政处罚法</a></b>
+                                    
+                                    <a href="#">行政处罚的概念</a>|
+                                    <a href="#">行政处罚的原则</a>|
+                                    <a href="#">行政处罚的设定</a>|
+                                    <a href="#">行政处罚种类</a>|
+                                    <a href="#">行政处罚程序</a>|
+                                    <a href="#">行政处罚听证</a>
+                                    <span class="more"><a href="#" target="_blank">更多>></a></span>
+                                </div>
+                                
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">治安处罚法</a></b>
+                                    
+                                    <a href="#">治安调解</a>|
+                                    <a href="#">治安管理</a>|
+                                    <a href="#">执法监督</a>|
+                                    <a href="#">治安案件管辖</a>|
+                                    <a href="#">治安处罚</a>|
+                                    <a href="#">治安处罚程序</a>|
+                                    <a href="#">处罚决定</a>|
+                                    <a href="#">治安处罚文书</a>
+                                    <span class="more"><a href="#" target="_blank">更多>></a></span>
+                                </div>
+                                
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">食品安全法</a></b>
+                                    
+                                    <a href="#">食品安全法解读</a>|
+                                    <a href="#">食品安全案例</a>|
+                                    <a href="#">食品安全事件</a>|
+                                    <a href="#">食品安全法规</a>|
+                                    <a href="#">食品保质期</a>|
+                                    <a href="#">食品安全知识</a>|
+                                    <a href="#">食品安全责任</a>
+                                    <span class="more"><a href="#" target="_blank">更多>></a></span>
+                                </div>
+                                
+                                <div class="fagui_outer_sub fagui_outer_split01">         
+                                    <b><a href="#">安全生产法</a></b>
+                                    
+                                    <a href="#">煤矿安全</a>|
+                                    <a href="#">矿山安全</a>|
+                                    <a href="#">化工安全</a>
+                                    <span class="more"><a href="#" target="_blank">更多>></a></span>
+                                </div>
+                                
+                                <div class="fagui_outer_sub fagui_outer_split02">         
+                                    <b><a href="#">报关商检</a></b>
+                                    
+                                    <a href="#">进口报关</a>|
+                                    <a href="#">出口报关</a>|
+                                    <a href="#">报关流程</a>
+                                    <span class="more"><a href="#" target="_blank">更多>></a></span>
+                                </div>
+                                
+                                <div class="fagui_outer_sub fagui_outer_split01">         
+                                    <b><a href="#">卫生法</a></b>
+                                    
+                                    <a href="#">卫生法规</a>|
+                                    <a href="#">卫生法问答</a>|
+                                    <a href="#">卫生法论</a>
+                                    <span class="more"><a href="#" target="_blank">更多>></a></span>
+                                </div>
+                                
+                                <div class="fagui_outer_sub fagui_outer_split02">         
+                                    <b><a href="#">公证法</a></b>
+                                    
+                                    <a href="#">公证机构</a>|
+                                    <a href="#">公证程序</a>|
+                                    <a href="#">公证效力</a>
+                                    <span class="more"><a href="#" target="_blank">更多>></a></span>
+                                </div>
+                                
+                                <div class="fagui_outer_sub fagui_outer_split01">         
+                                    <b><a href="#">律师法</a></b>
+                                    
+                                    <a href="#">收费标准</a>|
+                                    <a href="#">律师诉讼代理</a>|
+                                    <a href="#">法律援</a>
+                                    <span class="more"><a href="#" target="_blank">更多>></a></span>
+                                </div>
+                                
+                                <div class="fagui_outer_sub fagui_outer_split02">         
+                                    <b><a href="#">公务员法</a></b>
+                                    
+                                    <a href="#">职务与级别</a>|
+                                    <a href="#">录用</a>|
+                                    <a href="#">职务任免</a>
+                                    <span class="more"><a href="#" target="_blank">更多>></a></span>
+                                </div>
+                            </div>
+                        </li>	
+                        <li class="fagui_item">
+                            <div class="fagui_inner"><a href="#">经济法类</a></div>
+                            <div class="fagui_outer">
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">司法机构</a></b>
+                                    <a href="#">人民法院</a>|
+                                    <a href="#">人民检察院</a>|
+                                    <a href="#">公安机关</a>|
+                                    <a href="#">司法行政机关</a>|
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">司法制度</a></b>
+                                </div>
+                            </div>				
+                        </li>	
+                        <li class="fagui_item">
+                            <div class="fagui_inner"><a href="#">社会法类</a></div>
+                            <div class="fagui_outer">
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">组织机构</a></b>
+                                    <a href="#">中央军委</a>|
+                                    <a href="#">国防部</a>|
+                                    <a href="#">四总部</a>|
+                                    <a href="#">七大军区</a>|
+                                    <a href="#">中华人民共和国</a>|
+                                    <a href="#">武装力量</a>|
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">国防白皮书</a></b>
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">军队制度</a></b>
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">国防法规</a></b>
+                                </div>
+                            </div>
+                        </li>	
+                        <li class="fagui_item">
+                            <div class="fagui_inner"><a href="#">刑法类</a></div>
+                            <div class="fagui_outer">
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">外交机构</a></b>
+                                    <a href="#">外交部</a>|
+                                    <a href="#">中联部</a>|
+                                    <a href="#">对外友协</a>|
+                                    <a href="#">外交学会</a>|
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">外交人物</a></b>
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">外交政策</a></b>
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">建交国家一览表</a></b>
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">中国外交历程</a></b>
+                                </div>
+                            </div>				
+                        </li>	
+                        <li class="fagui_item">
+                            <div class="fagui_inner none"><a href="#">程序法类</a></div>
+                            <div class="fagui_outer">
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">教育数据</a></b>
+                                    <a href="#">教育数据统计</a>|
+                                    <a href="#">教育发展统计公报</a>|
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">教育体系</a></b>
+                                    <a href="#">学前教育</a>|
+                                    <a href="#">基础教育</a>|
+                                    <a href="#">高等教育</a>|
+                                    <a href="#">职业教育</a>|
+                                    <a href="#">成人教育</a>|
+                                    <a href="#">特殊教育</a>|
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">教育政策法规</a></b>
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">招生考试</a></b>
+                                    <a href="#">普通高考</a>|
+                                    <a href="#">成人高考</a>|
+                                    <a href="#">自学考试</a>|
+                                    <a href="#">海外考试</a>|
+                                    <a href="#">WSK考试</a>|
+                                    <a href="#">合作认证考试</a>|
+                                    <a href="#">外语等级考试</a>|
+                                    <a href="#">计算机等级考试</a>|
+                                </div>
+                                <div class="fagui_outer_sub">         
+                                    <b><a href="#">中国院校</a></b>
+                                </div>
+                            </div>
+                        </li>	
+                        
+                        
+                     </ul>
+                </div>
+            </div>
+            <!--分类结束-->
+            <div class="fagui_h10"></div>
+            <div class="fagui_slidebar_other">
+            	<div class="tit">更多</div>
+                <div class="inner"><a href="#" target="_blank">司法解释</a><span>|</span><a href="#" target="_blank">法规</a><br /><a href="#" target="_blank">规章</a><span>|</span><a href="#" target="_blank">条例</a><span>|</span><a href="#" target="_blank">条约</a>
+                </div>
+                <div class="fagui_h10"></div>
+                <div class="fagui_h10"></div>
+                <div class="tit">相关查询</div>
+                <div class="inner"><a href="#" target="_blank">法规</a>|<a href="#" target="_blank">裁判文书</a>|<a href="#" target="_blank">律师律所</a>
+                </div>
+            </div>
+        
+        </div>
+		<div class="fagui_sliderNav_right">
+			<div class="fagui_sliderNav_rb">
+				<div class="fagui_row1_banner">
+					<div class="fagui_banner">
+						<div class="fagui_banner_js">
+							<div class="fagui_banner_bigimg"><a href="#"><img src="static/temp/fagui_img2.jpg" /></a><p>网友称中国海军驱逐舰第9支队战力最强？1</p></div>
+							<div class="fagui_banner_bigimg"><a href="#"><img src="static/temp/fagui_img2.jpg" /></a><p>网友称中国海军驱逐舰第9支队战力最强？2</p></div>
+							<div class="fagui_banner_bigimg"><a href="#"><img src="static/temp/fagui_img2.jpg" /></a><p>网友称中国海军驱逐舰第9支队战力最强？3</p></div>
+							<div class="fagui_banner_bigimg"><a href="#"><img src="static/temp/fagui_img2.jpg" /></a><p>网友称中国海军驱逐舰第9支队战力最强？</p></div>
+							<div class="fagui_banner_bigimg"><a href="#"><img src="static/temp/fagui_img2.jpg" /></a><p>网友称中国海军驱逐舰第9支队战力最强？</p></div>
+							<div class="fagui_banner_bigimg"><a href="#"><img src="static/temp/fagui_img2.jpg" /></a><p>网友称中国海军驱逐舰第9支队战力最强？</p></div>
+							<div id="fagui_bannerNav" class="fagui_bannerNav">
+								<a class="fagui_trigger fagui_imgSelected" href="#">1</a>
+								<a class="fagui_trigger" href="#">2</a>
+								<a class="fagui_trigger" href="#">3</a>
+								<a class="fagui_trigger" href="#">4</a>
+								<a class="fagui_trigger" href="#">5</a>
+								<a class="fagui_trigger" href="#">6</a>
+							</div>
+							<a class="fagui_banner_prev" href="#"><img src="static/image/fagui_banner_prev.png" /></a>
+							<a class="fagui_banner_next" href="#"><img src="static/image/fagui_banner_next.png" /></a>
+						</div>
+					</div>
+                    <div class="fagui_h10"></div>
+					<div class="fagui_category">
+                    	<div class="fagui_c_inner">
+                        	<ul>
+                            	<li>
+                                	<div class="ico"><a href="#" target="_blank"><img src="static/image/fagui-ico-1.jpg" /></a></div>
+                                    <div class="tit"><a href="#" target="_blank">婚姻家庭</a></div>
+                                </li>
+                                <li>
+                                	<div class="ico"><a href="#" target="_blank"><img src="static/image/fagui-ico-2.jpg" /></a></div>
+                                    <div class="tit"><a href="#" target="_blank">刑事诉讼</a></div>
+                                </li>
+                                <li>
+                                	<div class="ico"><a href="#" target="_blank"><img src="static/image/fagui-ico-3.jpg" /></a></div>
+                                    <div class="tit"><a href="#" target="_blank">劳动纠纷</a></div>
+                                </li>
+                                <li>
+                                	<div class="ico"><a href="#" target="_blank"><img src="static/image/fagui-ico-4.jpg" /></a></div>
+                                    <div class="tit"><a href="#" target="_blank">交通事故</a></div>
+                                </li>
+                                <li>
+                                	<div class="ico"><a href="#" target="_blank"><img src="static/image/fagui-ico-5.jpg" /></a></div>
+                                    <div class="tit"><a href="#" target="_blank">合同纠纷</a></div>
+                                </li>
+                                <li class="none">
+                                	<div class="ico"><a href="#" target="_blank"><img src="static/image/fagui-ico-6.jpg" /></a></div>
+                                    <div class="tit"><a href="#" target="_blank">房产纠纷</a></div>
+                                </li>
+                           </ul>
+                           <div class="fagui_h10"></div>
+                           <ul>
+                                <li>
+                                	<div class="ico"><a href="#" target="_blank"><img src="static/image/fagui-ico-7.jpg" /></a></div>
+                                    <div class="tit"><a href="#" target="_blank">医疗事故</a></div>
+                                </li>
+                                <li>
+                                	<div class="ico"><a href="#" target="_blank"><img src="static/image/fagui-ico-8.jpg" /></a></div>
+                                    <div class="tit"><a href="#" target="_blank">债权债务</a></div>
+                                </li>
+                                <li>
+                                	<div class="ico"><a href="#" target="_blank"><img src="static/image/fagui-ico-9.jpg" /></a></div>
+                                    <div class="tit"><a href="#" target="_blank">公司法律</a></div>
+                                </li>
+                                <li>
+                                	<div class="ico"><a href="#" target="_blank"><img src="static/image/fagui-ico-10.jpg" /></a></div>
+                                    <div class="tit"><a href="#" target="_blank">损害赔偿</a></div>
+                                </li>
+                                <li>
+                                	<div class="ico"><a href="#" target="_blank"><img src="static/image/fagui-ico-11.jpg" /></a></div>
+                                    <div class="tit"><a href="#" target="_blank">工程纠纷</a></div>
+                                </li>
+                                <li class="none">
+                                	<div class="ico"><a href="#" target="_blank"><img src="static/image/fagui-ico-12.jpg" /></a></div>
+                                    <div class="tit"><a href="#" target="_blank">征地拆迁</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+				</div>
+				<div class="fagui_jrzg">
+					<div class="fagui_jrzg_title">法规聚焦</div>
+					<div class="fagui_jrzg_con">
+						<dl>
+							<dt><a href="#">四川绵阳一团伙假冒警察抢劫 成员个头太矮露马脚</a></dt>
+							<dd>
+								<ul>
+									<li><b>·</b><a href="#">儿子抢劫杀人外逃 母亲毁灭证据提供路费被判四年</a></li>
+									<li><b>·</b><a href="#">湖北通城婴儿被盗案告破 嫌疑人被抓男婴平安无恙</a></li>
+									<li><b>·</b><a href="#">16官员违反八项规定被查处 相关人员被党纪处分</a></li>
+									<li><b>·</b><a href="#">孙杨无证驾驶续：被曝花2.5万托人“买”驾照</a></li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#">四川绵阳一团伙假冒警察抢劫 成员个头太矮露马脚</a></dt>
+							<dd>
+								<ul>
+									<li><b>·</b><a href="#">儿子抢劫杀人外逃 母亲毁灭证据提供路费被判四年</a></li>
+									<li><b>·</b><a href="#">湖北通城婴儿被盗案告破 嫌疑人被抓男婴平安无恙</a></li>
+									<li><b>·</b><a href="#">16官员违反八项规定被查处 相关人员被党纪处分</a></li>
+									<li><b>·</b><a href="#">孙杨无证驾驶续：被曝花2.5万托人“买”驾照</a></li>
+								</ul>
+							</dd>
+						</dl>
+						
+					</div>
+                    <div class="fagui_h10"></div>
+                    <div class="fagui_jrzg_title">法规专题</div>
+                    <div class="fagui_fazt_con">
+                    	<h3>2013年中国最新婚姻法全文</h3>
+                     	<p>《婚姻法》共有6章51条。婚姻法特别强调了婚姻的成立和婚约解除，婚姻的效力…… </p>
+                        <span class="fagui_readmore"><a href="#"  target="_blank">详细>></a></span>
+                    </div>
+                    
+				</div>
+
+			</div>
+		</div>
+	</div>
+<!--法规频道首页主内容****侧边导航***banner**---end--->
+	<div class="fagui_clear"></div>
+    
+<!--法律咨询****新法速递****高层留言板----->
+	<div class="fagui_row2">
+    	<div class="fagui_zixun">
+        	<div class="fagui_title_c1">
+            	<div class="title_channel">法律咨询</div>
+                <span class="more"><a href="#"  target="_blank">更多>></a></span>
+            </div>
+            <div class="fagui_h8"></div>
+            <div class="inner-box">
+            	<ul>
+                	<li>
+                    	<span class="q_left">问：</span>
+                        <span class="q_right">我跟男朋友同居期间买了一套房子，因为感情不和分手了，房子怎么分割？</span>
+                        <div class="a_btn"><a href="#">[回答]</a></div>
+                    </li>
+                    <li>
+                    	<span class="q_left">问：</span>
+                        <span class="q_right">我家的房子建了50多年了，到现在摇摇欲坠了，想拆了重建，村里面说宅基地卖给人家了不可建。请问他们的做法合法吗？</span>
+                        <div class="a_btn"><a href="#">[回答]</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="fagui_xinfasudi">
+        	<div class="fagui_title_c1">
+            	<div class="title_channel">新法速递</div>
+                <span class="more"><a href="#"  target="_blank">更多>></a></span>
+            </div>            
+            <div class="fagui_txt_box01">
+            	<div class="tit"><a href="#" target="_blank">中华人民共和国企业法人登记管理条例（2011修订）</a></div>
+                <div class="summary">1988年6月3日中华人民共和国国务院令第1号发布 根据2011年1月8日《国务院关于废止和修改部分行政法规的决定》修订)...<a href="#" target="_blank" class="readmore">详细>></a></div>
+            </div>
+            <div class="fagui_lines1"></div>
+            <div class="fagui_list01">
+            	<ul>
+                    <li><b>·</b><a href="#">国家知识产权局关于修改《专利审查指南》的决定</a></li>
+                    <li><b>·</b><a href="#">关于印发《财政部规范性文件制定管理办法》的通知</a></li>
+                    <li><b>·</b><a href="#">关于重新印发《总分机构试点纳税人增值税计算缴纳暂行...</a></li>
+                    <li><b>·</b><a href="#">关于部分航空运输企业总分机构增值税计算缴纳问题的通知</a></li>
+                    <li><b>·</b><a href="#">关于印发《旅游质监执法机构和队伍建设指南（试行）》</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="fagui_liuyan">
+        	<div class="fagui_title_c1">
+            	<div class="title_channel">高层留言板</div>
+                <span class="more"><a href="#"  target="_blank">更多>></a></span>
+            </div>
+            <div class="fagui_h8"></div>
+            <div class="fagui_liuyan_col_tit">
+                <span class="fagui_liuyan_col_curtit">最高法</span>
+                <span>最高检</span>
+                <span>公安部</span>
+                <span>司法部</span>
+            </div>
+            <div class="fagui_liuyan_col_con">
+                <div class="fagui_liuyan_col_con_single" style="display:block;">                   
+                    <div class="inner">
+                    	 <div class="fagui_txt_box02">
+                            <div class="img-pic"><img src="static/temp/fagui_img3.jpg" width="68" height="85" /></div>
+                            <div class="summary">周强，男，汉族，1960年4月出生，湖北黄梅人，研究生学历，法学硕士学位。现任最高人民法院院长。</div>
+                        </div>
+                        <div class="fagui_lines1"></div>
+                        <div class="fagui_list02">
+                        	<ul>
+                            	<li><a href="#" target="_blank">网友：法院硬要乱判案怎么办</a></li>
+                                <li><a href="#" target="_blank">网友：冤假错案申诉难</a></li>
+                                <li><a href="#" target="_blank">网友：请问河南省高院的法官违规,我怎么投诉</a></li>
+                                <li><a href="#" target="_blank">网友：江苏三级法院纪检监察不作为</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="fagui_liuyan_col_con_single">
+            2222
+                </div>
+                <div class="fagui_liuyan_col_con_single">
+            3333
+                </div>
+                <div class="fagui_liuyan_col_con_single">
+            4444
+                </div>
+            </div>
+            
+        </div>
+        <div class="fagui_clear"></div>
+    </div>
+<!--法律咨询****新法速递****高层留言板---结束-->
+<div class="fagui_h20"></div>
+<!----宪法--->
+	<div class="fagui_row3">    	
+    	<div class="fagui_title_c2">
+            <div class="title_channel">宪法</div>
+            <span class="more"><a href="#"  target="_blank">更多>></a></span>
+        </div>
+        <div class="fagui_h10"></div>
+        <div class="fagui_xianfa_left">
+        	<div class="fagui_h10"></div>
+            <div class="inner">
+            	<div class="img-pic"><img src="static/image/fagui_x1.jpg" /></div>
+                <div class="fagui_h10"></div>
+                <div class="summary">
+序言<br />
+第一章　总纲<br />
+第二章　权利与义务<br />
+第三章　国家机构<br />
+第四章　国旗、国歌<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国徽、首都
+                </div>
+            </div>
+        </div>
+        <div class="fagui_xianfa_mid">
+        	<div class="inner">
+                <div class="fagui_txt_box03">
+                    <div class="tit"><a href="#" target="_blank">中华人民共和国宪法</a></div>
+                    <div class="summary"><p>《中华人民共和国宪法》是中华人民共和国的根本大法，规定拥有最高法律效力。中华人民共和国成立后，曾于1954年9月20日、1975年1月17日、1978年3月5日和1982年12月4日通过四个宪法，现行宪法为1982年宪法...</p><a href="#" target="_blank" class="readmore">详细&gt;&gt;</a></div>
+                </div>
+            </div>
+            <div class="fagui_lines1"></div>
+            <div class="fagui_h10"></div>
+            <ul>
+            	<li class="x1">
+                    <div class="ico"><a href="#" target="_blank"><img src="static/image/fagui_x2.jpg" /></a></div>
+                    <div class="tit"><a href="#" target="_blank">国旗</a></div>
+                </li>
+                <li class="x2">
+                    <div class="ico"><a href="#" target="_blank"><img src="static/image/fagui_x3.jpg" /></a></div>
+                    <div class="tit"><a href="#" target="_blank">国徽</a></div>
+                </li>
+                <li class="x3">
+                    <div class="ico"><a href="#" target="_blank"><img src="static/image/fagui_x4.jpg" /></a></div>
+                    <div class="tit"><a href="#" target="_blank">国歌</a></div>
+                </li>
+                <li class="x4">
+                    <div class="ico"><a href="#" target="_blank"><img src="static/image/fagui_x5.jpg" /></a></div>
+                    <div class="tit"><a href="#" target="_blank">首都</a></div>
+                </li>
+            </ul>
+        </div>
+        <div class="fagui_xianfa_right">
+        	<div class="fagui_h10"></div>
+            <!--滚动-->
+            <div class="fagui_ibox">
+                <div class="fagui_btnbox">
+                    <span class="fagui_picpre"></span>
+                    <span class="fagui_picnext"></span>
+                </div>
+                <div style="clear:both;"></div>
+                <div class="fagui_showbox">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="static/temp/fagui_img4.jpg" /></a>
+                            <p>毛泽东主席参与第一部宪法起草</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="static/temp/fagui_img4.jpg" /></a>
+                            <p>毛泽东主席参与第一部宪法起草</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="static/temp/fagui_img4.jpg" /></a>
+                            <p>毛泽东主席参与第一部宪法起草</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="static/temp/fagui_img4.jpg" /></a>
+                            <p>毛泽东主席参与第一部宪法起草</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="static/temp/fagui_img4.jpg" /></a>
+                            <p>毛泽东主席参与第一部宪法起草</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--滚动--结束-->
+            <div class="fagui_title_c3">
+                <div class="title_channel">修订历史</div>
+            </div>
+            <div class="fagui_xianfa_lishi">
+            	<div class="inner">
+                    <ul>
+                        <li><span><a href="#">共同纲领</a></span></li>
+                        <li><span><a href="#">五四宪法</a></span></li>
+                        <li><span><a href="#">七五宪法</a></span></li>
+                        <li><span><a href="#">七八宪法</a></span></li>
+                        <li><span><a href="#">八二宪法</a></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="fagui_clear"></div>
+    </div>
+<!----宪法---结束-->
+	<div class="fagui_h20"></div>
+<!----民商法--->
+	<div class="fagui_row4">    	
+    	<div class="fagui_title_c2">
+            <div class="title_channel">民商法</div>
+            <span class="more"><a href="#"  target="_blank">更多>></a></span>
+        </div>
+        <div class="fagui_h10"></div>
+        <div class="fagui_mingshang_left">
+        	<div class="ico-list">
+                <ul>
+                    <li>
+                        <div class="ico"><a href="#" target="_blank"><img src="static/image/fagui_m1.jpg"></a></div>
+                        <div class="tit"><a href="#" target="_blank">婚姻家庭</a></div>
+                    </li>
+                    <li>
+                        <div class="ico"><a href="#" target="_blank"><img src="static/image/fagui_m2.jpg"></a></div>
+                        <div class="tit"><a href="#" target="_blank">公司法律</a></div>
+                    </li>
+                    <li>
+                        <div class="ico"><a href="#" target="_blank"><img src="static/image/fagui_m3.jpg"></a></div>
+                        <div class="tit"><a href="#" target="_blank">医疗纠纷</a></div>
+                    </li>
+                    <li>
+                        <div class="ico"><a href="#" target="_blank"><img src="static/image/fagui_m4.jpg"></a></div>
+                        <div class="tit"><a href="#" target="_blank">合同纠纷</a></div>
+                    </li>
+                    <li>
+                        <div class="ico"><a href="#" target="_blank"><img src="static/image/fagui_m5.jpg"></a></div>
+                        <div class="tit"><a href="#" target="_blank">债权债务</a></div>
+                    </li>
+                    <li>
+                        <div class="ico"><a href="#" target="_blank"><img src="static/image/fagui_m6.jpg"></a></div>
+                        <div class="tit"><a href="#" target="_blank">劳动纠纷</a></div>
+                    </li>
+                    <li>
+                        <div class="ico"><a href="#" target="_blank"><img src="static/image/fagui_m7.jpg"></a></div>
+                        <div class="tit"><a href="#" target="_blank">房产纠纷</a></div>
+                    </li>
+                    <li>
+                        <div class="ico"><a href="#" target="_blank"><img src="static/image/fagui_m8.jpg"></a></div>
+                        <div class="tit"><a href="#" target="_blank">交通事故</a></div>
+                    </li>
+                    <li>
+                        <div class="ico"><a href="#" target="_blank"><img src="static/image/fagui_m9.jpg"></a></div>
+                        <div class="tit"><a href="#" target="_blank">征地拆迁</a></div>
+                    </li>
+                </ul>
+                <div class="fagui_clear"></div>
+            </div>
+            <div class="fagui_mingshang_listnum">
+            	<ul>
+                	<li><a href="#" target="_blank">房屋租赁合同</a></li>
+                    <li><a href="#" target="_blank">房屋买卖合同</a></li>
+                    <li><a href="#" target="_blank">保证书怎么写</a></li>
+                    <li><a href="#" target="_blank">工伤保险条例</a></li>
+                    <li><a href="#" target="_blank">离婚调查取证</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="fagui_mingshang_mid">
+        	<div class="fagui_hunyin">
+                <div class="fagui_h8"></div>
+                <div class="fagui_hunyin_col_tit">
+                    <span class="fagui_hunyin_col_curtit">婚姻法</span>
+                    <span>公司法</span>
+                    <span>劳动纠纷</span>
+                    <span>房产纠纷</span>
+                </div>
+                <div class="fagui_hunyin_col_con">
+                    <div class="fagui_hunyin_col_con_single" style="display:block;">                   
+                        <div class="inner">
+                             <div class="fagui_txt_box04">
+                                <div class="img-pic"><a href="#" target="_blank"><img src="static/temp/fagui_img5.jpg" width="100" height="129" /></a></div>
+                                <div class="txt-list">
+                                	    <dl>                                            
+                                            <dd>
+                                                <ul>
+                                                    <li><b>·</b><a href="#">女子落水丈夫不救一怒之下要离婚诉讼离婚</a></li>
+                                                    <li><b>·</b><a href="#">南京一新生女婴被遗弃后冻死</a></li>
+                                                    <li><b>·</b><a href="#">婚姻法丈夫买东西都记账 妻子嫌小气要离婚如何离婚</a></li>
+                                                    <li><b>·</b><a href="#">广州办计生证将只需“三证一照”婚姻动态</a></li>
+                                                    <li><b>·</b><a href="#">智障妻子为生娃 终与智障丈夫离婚诉讼离婚</a></li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="fagui_hunyin_col_con_single">
+                2222
+                    </div>
+                    <div class="fagui_hunyin_col_con_single">
+                3333
+                    </div>
+                    <div class="fagui_hunyin_col_con_single">
+                4444
+                    </div>
+                </div>
+                
+            </div>
+            <div class="fagui_hunyin">
+                <div class="fagui_h8"></div>
+                <div class="fagui_yiliao_col_tit">
+                    <span class="fagui_yiliao_col_curtit">医疗事故</span>
+                    <span class="">债务债权</span>
+                    <span class="">交通事故</span>
+                    <span>损害赔偿</span>
+                </div>
+                <div class="fagui_yiliao_col_con">
+                    <div class="fagui_yiliao_col_con_single" style="display: block;">                   
+                        <div class="inner">
+                             <div class="fagui_txt_box04">
+                                <div class="img-pic"><a href="#" target="_blank"><img src="static/temp/fagui_img5.jpg" width="100" height="129"></a></div>
+                                <div class="txt-list">
+                                	    <dl>                                            
+                                            <dd>
+                                                <ul>
+                                                    <li><b>·</b><a href="#">医疗纠纷中混合过错的确认</a></li>
+                                                    <li><b>·</b><a href="#">医疗过失导致的新生儿致残案例</a></li>
+                                                    <li><b>·</b><a href="#">三根钢钉打裂骨头 医院赔偿患者</a></li>
+                                                    <li><b>·</b><a href="#">美丽惹出的医疗事故</a></li>
+                                                    <li><b>·</b><a href="#">美容案例的归类认知</a></li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="fagui_yiliao_col_con_single" style="display: none;">
+                2222
+                    </div>
+                    <div class="fagui_yiliao_col_con_single" style="display: none;">
+                3333
+                    </div>
+                    <div class="fagui_yiliao_col_con_single" style="display: none;">
+                4444
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="fagui_mingshang_right">
+        	<div class="fagui_title_c1">
+            	<div class="title_channel">民商案例</div>
+            </div>
+            <div class="fagui_list03">
+            	<ul>
+                	<li>
+                    	<div class="tit"><a href="#" target="_blank">小学生校内玩游戏受伤 家长学校共担责</a></div>
+                        <div class="summary">小学生曾某在下课前与同学玩推拉游戏，不慎从乒乓球台上摔下来，造成九级伤残，因赔偿问题商议未果...
+                        	<span class="fagui_readmore"><a href="#" target="_blank">详细&gt;&gt;</a></span>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="tit"><a href="#" target="_blank">小学生校内玩游戏受伤 家长学校共担责</a></div>
+                        <div class="summary">小学生曾某在下课前与同学玩推拉游戏，不慎从乒乓球台上摔下来，造成九级伤残，因赔偿问题商议未果...
+                        	<span class="fagui_readmore"><a href="#" target="_blank">详细&gt;&gt;</a></span>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="tit"><a href="#" target="_blank">小学生校内玩游戏受伤 家长学校共担责</a></div>
+                        <div class="summary">小学生曾某在下课前与同学玩推拉游戏，不慎从乒乓球台上摔下来，造成九级伤残，因赔偿问题商议未果...
+                        	<span class="fagui_readmore"><a href="#" target="_blank">详细&gt;&gt;</a></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fagui_clear"></div>
+    </div>
+<!----民商法---结束-->
+<div class="fagui_h20"></div>
+<!----行政法--->
+	<div class="fagui_row4">    	
+    	<div class="fagui_title_c2">
+            <div class="title_channel">行政法</div>
+            <span class="more"><a href="#"  target="_blank">更多>></a></span>
+        </div>
+        <div class="fagui_h10"></div>
+        <div class="fagui_xingzheng_left">
+        	<div class="fagui_xz_menu">
+                <dl>
+                    <dt><a href="#"  target="_blank">行政许可法</a></dt>
+                    <dd>
+                    	<span><a href="#"  target="_blank">行政许可权</a></span>
+                        <span><a href="#"  target="_blank">行政许可申请</a></span>
+                        <span><a href="#"  target="_blank">行政许可范围</a></span>
+                        <span><a href="#"  target="_blank">行政许可程序</a></span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"  target="_blank">治安处罚法</a></dt>
+                    <dd>
+                    	<span><a href="#"  target="_blank">治安处罚程序</a></span>
+                        <span><a href="#"  target="_blank">治安处罚范围</a></span>
+                        <span><a href="#"  target="_blank">治安处罚种类</a></span>
+                        <span><a href="#"  target="_blank">治安处罚原则</a></span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"  target="_blank">食品安全法</a></dt>
+                    <dd>
+                    	<span><a href="#"  target="_blank">食品安全风险</a></span>
+                        <span><a href="#"  target="_blank">重要食品安全</a></span>
+                        <span><a href="#"  target="_blank">食品安全标准</a></span>
+                        <span><a href="#"  target="_blank">食品生产经营</a></span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"  target="_blank">公证法</a></dt>
+                    <dd>
+                    	<span><a href="#"  target="_blank">公证知识</a></span>
+                        <span><a href="#"  target="_blank">公证程序</a></span>
+                        <span><a href="#"  target="_blank">继承公证</a></span>
+                        <span><a href="#"  target="_blank">赠与公证</a></span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="fagui_xingzheng_mid">
+        	<div class="inner">
+            	<div class="fagui_txt_box05">
+                    <div class="tit"><a href="#" target="_blank">探望权受救火队员为赚40元补助唆使好友纵火烧山</a></div>
+                    <div class="summary"><p>攀枝花西区打火队的一名职工，嫌最近没有“生意”，便让朋友纵火为他“创收”。朋友几人在4月5日晚上，沿公路一线接连纵火...</p>
+                        <span class="readmore"><a href="#" target="_blank">详细&gt;&gt;</a></span>
+                    </div>
+                    <div class="fagui_clear"></div>
+                </div>
+            </div>
+            <div class="fagui_lines1"></div>
+            <div class="inner">
+            	<div class="fagui_list01">
+                    <ul>
+                        <li><b>·</b><a href="#">男子在火车上吸烟受到行政处罚</a></li>
+                        <li><b>·</b><a href="#">京首例诉交通队撤销行政处罚案宣判</a></li>
+                        <li><b>·</b><a href="#">酒后出示假证遭行政处罚</a></li>
+                        <li><b>·</b><a href="#">谎报被非法拘禁被行政拘留</a></li>
+                        <li><b>·</b><a href="#">小伙为显摆带五发子弹被行政拘留5天</a></li>
+                    </ul>
+                </div>
+                <div class="fagui_clear"></div>
+            </div>
+            <div class="fagui_h10"></div>
+            <div class="fagui_xz_book">
+            	<ul>
+                	<li>
+                    	<div class="img-pic"><a href="#" target="_blank"><img src="static/image/fagui_book1.jpg" width="60" height="77" /></a></div>
+                        <div class="tit"><a href="#" target="_blank">行政许可法</a></div>
+                    </li>
+                    <li>
+                    	<div class="img-pic"><a href="#" target="_blank"><img src="static/image/fagui_book1.jpg" width="60" height="77" /></a></div>
+                        <div class="tit"><a href="#" target="_blank">行政复议法</a></div>
+                    </li>
+                    <li>
+                    	<div class="img-pic"><a href="#" target="_blank"><img src="static/image/fagui_book1.jpg" width="60" height="77" /></a></div>
+                        <div class="tit"><a href="#" target="_blank">公务员法</a></div>
+                    </li>
+                    <li>
+                    	<div class="img-pic"><a href="#" target="_blank"><img src="static/image/fagui_book1.jpg" width="60" height="77" /></a></div>
+                        <div class="tit"><a href="#" target="_blank">警察法</a></div>
+                    </li>
+                </ul>
+                <div class="fagui_clear"></div>
+            </div>
+        </div>
+        <div class="fagui_xingzheng_right">
+        	<div class="inner">
+            	<h3>行政法百科</h3>
+                <div class="img-pic"><img src="static/temp/fagui_img6.jpg" width="242" height="145" /></div>
+                <div class="tit">什么是行政法？</div>
+                <div class="summary">
+                行政法规是国务院为领导和管理国家各项行政工作，根据宪法和法律，并且按照《行政法规制定程序条例》的规定而制定的政治、经济、教育、科技、文化、外事等各类法规的总称……<span class="readmore"><a href="#" target="_blank">详细&gt;&gt;</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="fagui_clear"></div>
+    </div>
+<!----行政法---结束-->
+<div class="fagui_h20"></div> 
+<!----经济法--->
+	<div class="fagui_row5">    	
+    	<div class="fagui_title_c2">
+            <div class="title_channel">经济法</div>
+            <span class="more"><a href="#"  target="_blank">更多>></a></span>
+        </div>
+        <div class="fagui_h10"></div>
+        <div class="fagui_jingji_left">
+        	<div class="fagui_jj_menu">
+                <dl>
+                    <dt><a href="#"  target="_blank">工程纠纷</a></dt>
+                    <dd>
+                    	<span><a href="#"  target="_blank">款项纠纷</a></span>
+                        <span><a href="#"  target="_blank">造价纠纷</a></span>
+                        <span><a href="#"  target="_blank">转包纠纷</a></span>
+                        <span><a href="#"  target="_blank">结算纠纷</a></span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"  target="_blank">商业秘密</a></dt>
+                    <dd>
+                    	<span><a href="#"  target="_blank">侵犯行为</a></span>
+                        <span><a href="#"  target="_blank">侵犯方式</a></span>
+                        <span><a href="#"  target="_blank">侵犯责任</a></span>
+                        <span><a href="#"  target="_blank">侵犯秘密罪</a></span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"  target="_blank">网络隐私</a></dt>
+                    <dd>
+                    	<span><a href="#"  target="_blank">网络隐私权</a></span>
+                        <span><a href="#"  target="_blank">黑客侵权</a></span>
+                        <span><a href="#"  target="_blank">个人信息权</a></span>
+                        <span><a href="#"  target="_blank">信息保护</a></span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"  target="_blank">房产纠纷</a></dt>
+                    <dd>
+                    	<span><a href="#"  target="_blank">房产买卖</a></span>
+                        <span><a href="#"  target="_blank">二手房</a></span>
+                        <span><a href="#"  target="_blank">房产税费</a></span>
+                        <span><a href="#"  target="_blank">物业管理</a></span>
+                    </dd>
+                </dl>
+            </div>
+		</div>
+        
+        <div class="fagui_jingji_mid">
+        	<div class="fagui_h10"></div>
+            <div class="fagui_h5"></div>
+            <div class="inner">
+            	<div class="fagui_txt_box06">
+                	<div class="img-pic"><a href="#"  target="_blank"><img src="static/temp/fagui_img7.jpg" width="260" height="185" /></a></div>
+                    <div class="txt-box">
+                    	<div class="tit"><a href="#"  target="_blank">房五条政策解读</a></div>
+                        <div class="fagui_h10"></div>
+                        <div class="summary">
+                        	<p>国务院常务会议出台“国五条” 释放坚持调控政策不动摇、力度不放 松的强烈信号，会议要求扩大个人住房房产税改革试点范围 专家预计房产税试点城 市将新增5至8个...</p>
+                            <span class="readmore"><a href="#" target="_blank">详细&gt;&gt;</a></span>
+                        </div>
+                    </div>
+                    <div class="fagui_clear"></div>
+                </div>
+            </div>
+            <div class="fagui_h10"></div>
+            <div class="fagui_lines1"></div>
+            <div class="inner">
+                <div class="fagui_list01">
+                    <ul>
+                        <li><b>·</b><a href="#">某国企食堂饭卡充值员2年侵占46万元充值现金</a></li>
+                        <li><b>·</b><a href="#">西安一校长以扩建学校为名非法集资4000多万元</a></li>
+                        <li><b>·</b><a href="#">湖北寺庙会计挪用200万元买六合彩</a></li>
+                        <li><b>·</b><a href="#">为自己的上市公司 国企董事长吞千万公款</a></li>
+                        <li><b>·</b><a href="#">湖南安仁交通局副局长贪污87万</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="fagui_jingji_right">
+        	<div class="fagui_title_c1">
+            	<div class="title_channel">经济纠纷</div>
+            </div>
+            
+            <div class="inner">
+                <div class="fagui_list03">
+                    <ul>
+                        <li>
+                            <div class="fagui_h8"></div>
+                            <div class="tit"><a href="#" target="_blank">是诈骗，盗窃，还是经济纠纷？</a></div>
+                            <div class="summary"><p>夏邑县个体户董某、鹿某合伙到巩义联系制砖机购销业务。却发现制砖机器已被卸走只剩下汽车停放在院内。服务员说：董某让转告你们...</p>
+                                <span class="fagui_readmore"><a href="#" target="_blank">详细&gt;&gt;</a></span>
+                            </div>
+                            <div class="fagui_clear"></div>
+                        </li>
+                        <li>                           
+                            <div class="fagui_h8"></div>
+                            <div class="tit"><a href="#" target="_blank">是诈骗，盗窃，还是经济纠纷？</a></div>
+                            <div class="summary"><p>夏邑县个体户董某、鹿某合伙到巩义联系制砖机购销业务。却发现制砖机器已被卸走只剩下汽车停放在院内...</p>
+                                <span class="fagui_readmore"><a href="#" target="_blank">详细&gt;&gt;</a></span>
+                            </div>
+                            <div class="fagui_clear"></div>
+                        </li>
+    
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="fagui_clear"></div>
+	</div>
+<!----经济法---结束-->
+<div class="fagui_h20"></div>
+<!----社会法--->
+	<div class="fagui_row6">    	
+    	<div class="fagui_title_c2">
+            <div class="title_channel">社会法</div>
+            <span class="more"><a href="#"  target="_blank">更多>></a></span>
+        </div>
+        <div class="fagui_h10"></div>
+        <div class="fagui_shehui_left">
+        	<div class="fagui_shehui_menu">
+                <dl>
+                    <dt><a href="#"  target="_blank">劳动法</a></dt>
+                    <dd>
+                    	<span><a href="#"  target="_blank">款项纠纷</a></span>
+                        <span><a href="#"  target="_blank">造价纠纷</a></span>
+                        <span><a href="#"  target="_blank">转包纠纷</a></span>
+                        <span><a href="#"  target="_blank">结算纠纷</a></span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"  target="_blank">妇女儿童权益法</a></dt>
+                </dl>
+                <dl>
+                    <dt><a href="#"  target="_blank">消费者权益保护法</a></dt>
+                </dl>
+                <dl>
+                    <dt><a href="#"  target="_blank">环境法</a></dt>
+                </dl>
+            </div>
+         </div>         
+         <div class="fagui_shehui_mid">
+         	<div class="fagui_shehui">
+                <div class="fagui_shehui_col_tit">
+                    <span class="fagui_shehui_col_curtit">婚姻法</span>
+                    <span>公司法</span>
+                    <span>劳动纠纷</span>
+                    <span>房产纠纷</span>
+                </div>
+                <div class="fagui_shehui_col_con">
+                    <div class="fagui_shehui_col_con_single" style="display:block;">                   
+                        <div class="inner">
+                             <div class="fagui_txt_box04">
+                                <div class="img-pic"><a href="#" target="_blank"><img src="static/temp/fagui_img5.jpg" width="100" height="129"></a></div>
+                                <div class="txt-list">
+                                	    <dl>                                            
+                                            <dd>
+                                                <ul>
+                                                    <li><b>·</b><a href="#">女子落水丈夫不救一怒之下要离婚诉讼离婚</a></li>
+                                                    <li><b>·</b><a href="#">南京一新生女婴被遗弃后冻死</a></li>
+                                                    <li><b>·</b><a href="#">婚姻法丈夫买东西都记账 妻子嫌小气要离婚如何离婚</a></li>
+                                                    <li><b>·</b><a href="#">广州办计生证将只需“三证一照”婚姻动态</a></li>
+                                                    <li><b>·</b><a href="#">智障妻子为生娃 终与智障丈夫离婚诉讼离婚</a></li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                </div>
+								<div class="fagui_clear"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="fagui_shehui_col_con_single">
+                2222
+                    </div>
+                    <div class="fagui_shehui_col_con_single">
+                3333
+                    </div>
+                    <div class="fagui_shehui_col_con_single">
+                4444
+                    </div>
+                </div>
+                
+            </div>
+         </div>
+         <div class="fagui_shehui_right">
+         	<div class="fagui_title_c4">
+            	<div class="title_channel">社会法热搜词</div>
+            </div>
+            <div class="fagui_shehui_ci">
+            	<div class="ci_iteam ci_k1"><a href="#" target="_parent">热词1</a></div>
+                <div class="ci_iteam ci_k2"><a href="#" target="_parent">热词2</a></div>
+                <div class="ci_iteam ci_k3"><a href="#" target="_parent">热词3</a></div>
+                <div class="ci_iteam ci_k4"><a href="#" target="_parent">热词4</a></div>
+                <div class="ci_iteam ci_k5"><a href="#" target="_parent">热词5</a></div>
+                <div class="ci_iteam ci_k6"><a href="#" target="_parent">热词6</a></div>
+                <div class="fagui_clear"></div>
+            </div>
+         </div>
+         <div class="fagui_clear"></div>
+	</div> 
+<!----社会法---结束-->
+<div class="fagui_h10"></div>
+<!----刑法--->
+	<div class="fagui_row7">    	
+    	<div class="fagui_title_c2">
+            <div class="title_channel">刑法</div>
+            <span class="more"><a href="#"  target="_blank">更多>></a></span>
+        </div>
+        <div class="fagui_h10"></div>
+        <div class="fagui_xingfa_left">
+        	<div class="fagui_xingfa_menu">
+                <dl>
+                    <dt><a href="#"  target="_blank">刑事辩护</a></dt>
+                    <dd>
+                    	<span><a href="#"  target="_blank">犯罪量刑</a></span>
+                        <span><a href="#"  target="_blank">正当防卫</a></span>
+                        <span><a href="#"  target="_blank">刑事诉讼</a></span>
+                        <span><a href="#"  target="_blank">刑事责任</a></span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"  target="_blank">刑事诉讼</a></dt>
+                    <dd>
+                    	<span><a href="#"  target="_blank">立案</a></span>
+                        <span><a href="#"  target="_blank">刑事拘留</a></span>
+                        <span><a href="#"  target="_blank">强制执行</a></span>
+                        <span><a href="#"  target="_blank">管辖权</a></span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"  target="_blank">取保候审</a></dt>
+                    <dd>
+                    	<span style="margin-right:8px;"><a href="#"  target="_blank">取保候审条件</a></span>
+                        <span style="margin-right:0px;"><a href="#"  target="_blank">取保候审申请书</a></span>
+                        <span><a href="#"  target="_blank">监视居住</a></span>
+                        <span style="margin-right:0px;"><a href="#"  target="_blank">取保候审保证</a></span>
+                    </dd>
+                </dl>
+			</div>
+        </div>
+        <div class="fagui_xingfa_mid">
+        	<div class="fagui_xingfa">
+                <div class="fagui_xingfa_col_tit">
+                    <span class="fagui_xingfa_col_curtit">刑事辩护</span>
+                    <span>刑事诉讼</span>
+                    <span>取保候审</span>
+                    <span>刑事诉讼</span>
+                </div>
+                <div class="fagui_xingfa_col_con">
+                    <div class="fagui_xingfa_col_con_single" style="display:block;">                   
+                        <div class="inner">
+                             <div class="fagui_txt_box07">
+                                <div class="img-pic"><a href="#" target="_blank"><img src="static/temp/fagui_img8.jpg" width="153" height="99" /></a></div>
+                                <div class="txt-box">
+                                    <div class="tit"><a href="#" target="_blank">“扫黄打非”行动全国展开</a></div>
+                                    <div class="summary">
+                                        <p>2013年7月1日,新老年人权益保障法正式施行,为了保护老年人权益,把常回家看看正式写入该法,用人单位应该放探亲假,儿女不履行回家探望老人属于违法行为。 </p>
+                                        <span class="readmore"><a href="#" target="_blank">详细&gt;&gt;</a></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="fagui_lines1"></div>
+                        <div class="inner">
+                            <div class="fagui_list01">
+                                <ul>
+                                    <li><b>·</b><a href="#">扫黄打非行动全国展开</a></li>
+                                    <li><b>·</b><a href="#">扫黄打非行动在全国展开（图）</a></li>
+                                    <li><b>·</b><a href="#">诈骗罪量刑标准</a></li>
+                                    <li><b>·</b><a href="#">什么是针刺犯罪</a></li>
+                                    <li><b>·</b><a href="#">陈绍基案件最新进展背后两个风</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="fagui_list01">
+                                <ul>
+                                    <li><b>·</b><a href="#">扫黄打非行动全国展开</a></li>
+                                    <li><b>·</b><a href="#">扫黄打非行动在全国展开（图）</a></li>
+                                    <li><b>·</b><a href="#">诈骗罪量刑标准</a></li>
+                                    <li><b>·</b><a href="#">什么是针刺犯罪</a></li>
+                                    <li><b>·</b><a href="#">陈绍基案件最新进展背后两个风</a></li>
+                                </ul>
+                            </div>
+                            <div class="fagui_clear"></div>
+                        </div>
+                    </div>
+                    <div class="fagui_xingfa_col_con_single">
+                2222
+                    </div>
+                    <div class="fagui_xingfa_col_con_single">
+                3333
+                    </div>
+                    <div class="fagui_xingfa_col_con_single">
+                4444
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="fagui_xingfa_right">
+        	<div class="inner">
+            	<h3>刑事罪名库</h3>
+                <div class="img-pic"><img src="static/image/fagui_book2.jpg" /></div>
+                <div class="fagui_h10"></div>
+                <div class="summary">
+                	<span><a href="#">非法经营罪</a></span>
+                    <span><a href="#">寻衅滋事罪</a></span>
+                    <span><a href="#">盗窃罪</a></span>
+                    <span><a href="#">职务侵占罪</a></span>
+                    <span><a href="#">非法持有毒品罪</a></span>
+                    <span><a href="#">行贿罪</a></span>
+                    <span><a href="#">非法吸收公众存款罪</a></span>
+                </div>
+            </div>
+            <div class="fagui_clear"></div>
+        </div>
+        <div class="fagui_clear"></div>
+	</div>
+
+<!----刑法---结束-->
+
+<div class="fagui_h20"></div>
+<!----程序法--->
+	<div class="fagui_row8">    	
+    	<div class="fagui_title_c2">
+            <div class="title_channel">程序法</div>
+            <span class="more"><a href="#"  target="_blank">更多>></a></span>
+        </div>
+        <div class="fagui_h10"></div>
+        <div class="fagui_chengxu_left">
+        	<div class="fagui_cx_menu">
+                <dl>
+                    <dt><a href="#"  target="_blank">民事诉讼</a></dt>
+                    <dd>
+                    	<span><a href="#"  target="_blank">民事调解</a></span>
+                        <span><a href="#"  target="_blank">民事诉讼</a></span>
+                        <span><a href="#"  target="_blank">财产保全</a></span>
+                        <span><a href="#"  target="_blank">强制执行</a></span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"  target="_blank">行政诉讼</a></dt>
+                    <dd>
+                    	<span><a href="#"  target="_blank">诉讼时效</a></span>
+                        <span><a href="#"  target="_blank">行政赔偿</a></span>
+                        <span><a href="#"  target="_blank">行政判决</a></span>
+                        <span><a href="#"  target="_blank">行政裁定</a></span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"  target="_blank">民事调解</a></dt>
+                    <dd>
+                    	<span><a href="#"  target="_blank">委托调解</a></span>
+                        <span><a href="#"  target="_blank">治安调解</a></span>
+                        <span><a href="#"  target="_blank">纠纷调解</a></span>
+                        <span><a href="#"  target="_blank">仲裁调解</a></span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"  target="_blank">国家赔偿</a></dt>
+                    <dd>
+                    	<span><a href="#"  target="_blank">赔偿责任</a></span>
+                        <span><a href="#"  target="_blank">赔偿时效</a></span>
+                        <span><a href="#"  target="_blank">赔偿标准</a></span>
+                        <span><a href="#"  target="_blank">赔偿方式</a></span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="fagui_chengxu_mid">
+			<div class="fagui_chengxu">
+                <div class="fagui_chengxu_col_tit">
+                    <span class="fagui_chengxu_col_curtit">今日焦点</span>
+                    <span>律师案例</span>
+                </div>
+                <div class="fagui_chengxu_col_con">
+                    <div class="fagui_chengxu_col_con_single" style="display:block;">                   
+                    	<div class="inner">
+                            <div class="fagui_txt_box05">
+                                <div class="tit"><a href="#" target="_blank">新老年人权益保障法（2013全文）</a></div>
+                                <div class="summary"><p>2013年7月1日,新老年人权益保障法正式施行,为了保护老年人权益,把常回家看看正式写入该法,用人单位应该放探亲假,儿女不履行回家探望老人属于违法行为。 </p>
+                                    <span class="readmore"><a href="#" target="_blank">详细&gt;&gt;</a></span>
+                                </div>
+                                <div class="fagui_clear"></div>
+                            </div>
+                        </div>
+                        <div class="fagui_lines1"></div>
+                        <div class="inner">
+                            <div class="fagui_list01">
+                                <ul>
+                                    <li><b>·</b><a href="#">王敏不服食品监督检验所食品卫生管理处罚决定案</a></li>
+                                    <li><b>·</b><a href="#">福建省第一件不服消防事故责任认定</a></li>
+                                    <li><b>·</b><a href="#">三亚国税查处一房产企业偷税案 征收税</a></li>
+                                    <li><b>·</b><a href="#">家人间打麻将少量输赢不属赌博赌博</a></li>
+                                    <li><b>·</b><a href="#">杭州XX门诊部与杭州市XX区卫生局行政处罚案件</a></li>
+                                    <li><b>·</b><a href="#">家人间打麻将少量输赢不属赌博赌博</a></li>
+                                    <li><b>·</b><a href="#">杭州XX门诊部与杭州市XX区卫生局行政处罚案件</a></li>
+                                </ul>
+                            </div>
+                            <div class="fagui_clear"></div>
+                        </div>
+
+                    </div>
+                    <div class="fagui_chengxu_col_con_single">
+                2222
+                    </div>
+
+                </div>
+                
+            </div>
+
+           
+        </div>
+        <div class="fagui_chengxu_right">
+        	<div class="inner">
+            	<h3>程序法百科</h3>
+                <div class="img-pic"><img src="static/temp/fagui_img9.jpg" width="242" height="145" /></div>
+                <div class="tit">什么是程序法？</div>
+                <div class="summary">
+                程序法规是国务院为领导和管理国家各项行政工作，根据宪法和法律，并且按照《行政法规制定程序条例》的规定而制定的政治、经济、教育、科技、文化、外事等各类法规的总称……<span class="readmore"><a href="#" target="_blank">详细&gt;&gt;</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="fagui_clear"></div>
+    </div>
+<!----程序法---结束-->
+<div class="fagui_h20"></div>
+<!----律师律所--->
+	<div class="fagui_row8">    	
+    	<div class="fagui_title_c2">
+            <div class="title_channel">律师律所</div>
+            <span class="more"><a href="#"  target="_blank">更多>></a></span>
+        </div>
+        <div class="fagui_h10"></div>
+        <div class="fagui_lvshi_left">
+        	<div class="fagui_ls_menu">
+            	<ul>
+                	<li><a href="#" target="_blank">律师查询</a></li>
+                    <li><a href="#" target="_blank">律所查询</a></li>
+                    <li><a href="#" target="_blank">公证员查询</a></li>
+                    <li><a href="#" target="_blank">公证处查询</a></li>
+                    <li><a href="#" target="_blank">司法鉴定机构</a></li>
+                </ul>
+                <div class="fagui_clear"></div>
+            </div>
+        </div>
+        <div class="fagui_lvshi_mid">
+        	<div class="inner">
+            	<img src="static/image/fagui_ls_map.jpg" width="400" height="338" />
+            </div>
+        </div>
+        <div class="fagui_lvshi_right">
+        	<div class="fagui_title_c5">
+            	<div class="title_channel">按地区查找</div>
+            </div>
+            <div class="fagui_h10"></div>
+            <div class="inner">
+            	
+                <span><a href="#" target="_blank">北京</a></span>
+                <span><a href="#" target="_blank">上海</a></span>
+                <span><a href="#" target="_blank">天津</a></span>
+                <span><a href="#" target="_blank">重庆</a></span>
+                <span><a href="#" target="_blank">吉林</a></span>
+                <span><a href="#" target="_blank">安徽</a></span>
+                
+                <span><a href="#" target="_blank">北京</a></span>
+                <span><a href="#" target="_blank">上海</a></span>
+                <span><a href="#" target="_blank">天津</a></span>
+                <span><a href="#" target="_blank">重庆</a></span>
+                <span><a href="#" target="_blank">吉林</a></span>
+                <span><a href="#" target="_blank">安徽</a></span>
+                
+                <span><a href="#" target="_blank">北京</a></span>
+                <span><a href="#" target="_blank">上海</a></span>
+                <span><a href="#" target="_blank">天津</a></span>
+                <span><a href="#" target="_blank">重庆</a></span>
+                <span><a href="#" target="_blank">吉林</a></span>
+                <span><a href="#" target="_blank">安徽</a></span>
+            </div>
+        </div>
+        <div class="fagui_clear"></div>
+	</div>
+<!----律师律所---结束-->
+
+<!----法规教育--->
+	<div class="fagui_row9">    	
+        <div class="fagui_title_c1">
+            <div class="title_channel">法规教育</div>
+        </div>
+        <div class="fagui_h10"></div>
+        <div class="fagui_jiaoyu_left">
+        	 <div class="fagui_h3"></div>
+            <div class="inner">
+            	<div class="tit"><a href="#" target="_blank">司法考试</a></div>
+                <div class="img-pic"><a href="#" target="_blank"><img src="static/image/fagui_jy_01.jpg" width="127" height="128" /></a></div>
+            </div>
+        </div>
+        <div class="fagui_jiaoyu_mid">
+        	<div class="fagui_title_c6">
+            	<div class="title_channel">法规图书</div>
+                <span class="fagui_btn_huan fagui_zgls_picnext">换一换</span>
+            </div>
+			<div class="fagui_jy_booklist2">
+<!--滚动-->
+<div class="fagui_zgls_ibox">
+    <div class="fagui_zgls_showbox">
+        <ul>
+            <li>
+                <div class="abox">
+                    <div class="img-pic">
+                    <a href="#" target="_blank"><img src="static/temp/fagui_jy_02.jpg" width="80" height="114" /></a>
+                    </div>
+				</div>
+                <div class="abox">
+                    <div class="img-pic">
+                    <a href="#" target="_blank"><img src="static/temp/fagui_jy_03.jpg" width="80" height="114" /></a>
+                    </div>
+				</div>
+                <div class="abox">
+                    <div class="img-pic">
+                    <a href="#" target="_blank"><img src="static/temp/fagui_jy_04.jpg" width="80" height="114" /></a>
+                    </div>
+				</div>
+                <div class="abox">
+                    <div class="img-pic">
+                    <a href="#" target="_blank"><img src="static/temp/fagui_jy_05.jpg" width="80" height="114" /></a>
+                    </div>
+				</div>
+                <div class="fagui_clear"></div>
+            </li>
+            
+            <li>
+                <div class="abox">
+                    <div class="img-pic">
+                    <a href="#" target="_blank"><img src="static/temp/fagui_jy_05.jpg" width="80" height="114" /></a>
+                    </div>
+				</div>
+                <div class="abox">
+                    <div class="img-pic">
+                    <a href="#" target="_blank"><img src="static/temp/fagui_jy_04.jpg" width="80" height="114" /></a>
+                    </div>
+				</div>
+                <div class="abox">
+                    <div class="img-pic">
+                    <a href="#" target="_blank"><img src="static/temp/fagui_jy_03.jpg" width="80" height="114" /></a>
+                    </div>
+				</div>
+                <div class="abox">
+                    <div class="img-pic">
+                    <a href="#" target="_blank"><img src="static/temp/fagui_jy_02.jpg" width="80" height="114" /></a>
+                    </div>
+				</div>
+                <div class="fagui_clear"></div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--滚动--结束-->
+        	</div>
+        </div>
+        <div class="fagui_jiaoyu_right">
+           
+            <div class="inner">
+            	 <div class="fagui_title_c6">
+                    <div class="title_channel">法律院校</div>
+                </div>
+                <div class="fagui_txt_box08">
+                    <div class="img-pic"><a href="#" target="_blank"><img src="static/temp/fagui_jy_06.jpg" width="100" height="104"></a></div>
+                    <div class="txt-box">
+                        <div class="tit"><a href="#" target="_blank">“扫黄打非”行动全国展开</a></div>
+                        <div class="summary">
+                            <p>2013年7月1日,新老年人权益保障法正式施行,为了保护老年人权益,把常回家看看正式写入该法,用人单位应该放探亲假,儿女不履行回家探望老人属于违法行为。 </p>
+                            <span class="readmore"><a href="#" target="_blank">官网链接&gt;&gt;</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fagui_clear"></div>
+    </div>
+<!----法规教育---结束-->
+<div class="fagui_h20"></div>
+<!----法规服务---法规导航-->
+	<div class="fagui_row10">
+    	<div class="fagui_fw_left">
+        	<div class="fagui_title_c1">
+                <div class="title_channel">法规服务</div>
+            </div>
+            <div class="inner"><img src="static/image/fagui_fw_01.jpg" /></div>
+        </div>
+        <div class="fagui_fw_right">
+        	<div class="fagui_title_c1">
+                <div class="title_channel">法规导航</div>
+            </div>
+            <div class="fagui_h10"></div>
+            <div class="fagui_dh_list">
+            	<ul>
+                	<li>
+                    	<div class="tit"><a href="#" target="_blank">法规部门</a></div>
+                        <div class="img-txt">
+                        	<div class="imgs"><img src="static/image/fagui_dh_01.jpg" width="66" height="80"/></div>
+                            <div class="txts">
+                            	<span><a href="#" target="_blank">中央人民政府</a></span>
+                                <span><a href="#" target="_blank">全国人大</a></span>
+                                <span><a href="#" target="_blank">最高法</a></span>
+                                <span><a href="#" target="_blank">最高检</a></span>
+                                <span><a href="#" target="_blank">法制办</a></span>
+                            </div>
+                            <div class="fagui_clear"></div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                    	<div class="tit"><a href="#" target="_blank">法律教育</a></div>
+                        <div class="img-txt">
+                        	<div class="imgs"><img src="static/image/fagui_dh_02.jpg" width="66" height="80"/></div>
+                            <div class="txts">
+                            	<span><a href="#" target="_blank">法律院校</a></span>
+                                <span><a href="#" target="_blank">司法考试</a></span>
+                                <span><a href="#" target="_blank">培训机构</a></span>
+                            </div>
+                            <div class="fagui_clear"></div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                    	<div class="tit"><a href="#" target="_blank">法律数据库</a></div>
+                        <div class="img-txt">
+                        	<div class="imgs"><img src="static/image/fagui_dh_03.jpg" width="66" height="80"/></div>
+                            <div class="txts">
+                            	<span><a href="#" target="_blank">法律图书馆</a></span>
+                                <span><a href="#" target="_blank">北大之星</a></span>
+                                <span><a href="#" target="_blank">北大法意</a></span>
+                            </div>
+                            <div class="fagui_clear"></div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                    	<div class="tit"><a href="#" target="_blank">法律网站</a></div>
+                        <div class="img-txt">
+                        	<div class="imgs"><img src="static/image/fagui_dh_04.jpg" width="66" height="80"/></div>
+                            <div class="txts">
+                            	<span><a href="#" target="_blank">法律图书馆</a></span>
+                                <span><a href="#" target="_blank">法律界</a></span>
+                                <span><a href="#" target="_blank">中法网</a></span>
+                                <span><a href="#" target="_blank">找法网</a></span>
+                                <span><a href="#" target="_blank">法制网</a></span>
+                            </div>
+                            <div class="fagui_clear"></div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                    	<div class="tit"><a href="#" target="_blank">法律图书</a></div>
+                        <div class="img-txt">
+                        	<div class="imgs"><img src="static/image/fagui_dh_05.jpg" width="66" height="80"/></div>
+                            <div class="txts">
+                            	<span><a href="#" target="_blank">法律出版社</a></span>
+                                <span><a href="#" target="_blank">政法大学出版社</a></span>
+                                <span><a href="#" target="_blank">中国法制出版社</a></span>
+                            </div>
+                            <div class="fagui_clear"></div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                    	<div class="tit"><a href="#" target="_blank">律师事务所</a></div>
+                        <div class="img-txt">
+                        	<div class="imgs"><img src="static/image/fagui_dh_06.jpg" width="66" height="80"/></div>
+                            <div class="txts">
+                            	<span><a href="#" target="_blank">北京大成律师事务所</a></span>
+                                <span><a href="#" target="_blank">北京金杜律师事务所</a></span>
+                                <span><a href="#" target="_blank">上海广发律师事务所</a></span>
+                            </div>
+                            <div class="fagui_clear"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fagui_clear"></div>
+    </div>
+<!----法规服务---法规导航--结束-->
+</div>
+<!--法规频道首页主内容--end-->
+<!--底部-->
+<div class="all_nav">
+		<a href="#">首页</a>|
+		<a href="#">时政</a>|
+		<a href="#">地方</a>|
+		<a href="#">国际</a>|
+		<a href="#">国内</a>|
+		<a href="#">港澳台</a>|
+		<a href="#">财经</a>|
+		<a href="#">社会</a>|
+		<a href="#">法制</a>|
+		<a href="#">军事</a>|
+		<a href="#">体育</a>|
+		<a href="#">房产</a>|
+		<a href="#">汽车</a>|
+		<a href="#">娱乐</a>|
+		<a href="#">时尚</a>|
+		<a href="#">教育</a>|
+		<a href="#">健康</a>|
+		<a href="#">科技</a>|
+</div>
+<div class="footer">
+<p>
+<a t="" onclick="javascript:window.external.AddFavorite('http://www.chinaso.com','国家搜索')" href="#">设国家搜索为主页</a>
+<span>|</span>
+<a href="#">关于我们</a>
+<span>|</span>
+<a href="#">联系我们</a>
+<span>|</span>
+<a href="#">版权声明</a>
+<span>|</span>
+<a href="#">法律顾问</a>
+<span>|</span>
+<a href="#">广告服务</a>
+<span>|</span>
+<a href="#">帮助中心</a>
+</p>
+<span>©2013 使用国家搜索前必读 京ICP证 号</span>
+</div>
+<!--底部end-->
+</body>
+</html>
+>>>>>>>>>

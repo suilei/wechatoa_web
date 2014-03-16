@@ -1,0 +1,5 @@
+/*头部LOGO*/
+.news_all .head .logo{background:url(../image/logo_news.png) no-repeat;width:186px;height:60px;}
+/*右侧小图*/
+.news_all .recommend{position:absolute;right:0; top: 20px;}
+

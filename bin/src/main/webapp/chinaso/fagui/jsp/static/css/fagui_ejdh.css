@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+/*国情频道二级导航主内容*/
+body{ background:#FFF;}
+.fagui_wrap,.fagui_position{width:1000px;margin:0 auto;}
+.fagui_position{ line-height:20px;}
+.fagui_position,.fagui_position a{ color:#004175; font-family:"微软雅黑";}
+.fagui_left{ width:690px; float:left; overflow:hidden;}
+.fagui_right{ width:290px; float:right; overflow:hidden;}
+.fagui_title,.fagui_tit02{ background:url(../image/fagui_tit.jpg) repeat-x; line-height:43px; height:43px; padding-left:10px; overflow:hidden;}
+.fagui_tit02{ background:url(../image/fagui_tit01.jpg) repeat-x;}
+.fagui_tit{ font-size:16px; font-family:"微软雅黑"; font-weight:bold; line-height:43px; color:#196DA7;}
+.fagui_inner{ padding:0 10px; overflow:hidden;}
+.fagui_Lbox{ width:355px; float:left;}
+.fagui_Rbox{ width:275px; float:right;}
+.fagui_summary{ line-height:26px; text-indent:2em; color:#656565;font-family:"微软雅黑";}
+.fagui_more{float:right;font-family:"微软雅黑";}
+.fagui_imgbg{ background:url(../image/fagui_imgbg.jpg) no-repeat; width:273px; height:204px; padding:2px 0 0 2px;}
+.fagui_title01{ height:35px; position:relative; border-bottom:1px solid #E5E5E5;}
+.fagui_dwtit{ position:absolute; left:0; height:36px; background:#FFF;}
+.fagui_tit01{ border:1px solid #E5E5E5; float:left; border-bottom:none; border-top:3px solid #3598DB; height:33px; line-height:32px; overflow:hidden; padding:0 10px;font-family:"微软雅黑"; font-weight:bold; font-size:14px; }
+.fagui_tit01 a,.fagui_xfkd a{color:#196DA7;}
+.fagui_title01 .fagui_more{ line-height:35px;}
+.fagui_image{ float:left; padding-right:10px;}
+.fagui_imgtex{ line-height:25px;font-family:"微软雅黑"; color:#656565;}
+.fagui_line{ border-top:1px dotted #7F7F7F; height:1px; line-height:1px; font-size:1px; overflow:hidden; clear:both;}
+.fagui_list li{ line-height:28px;height:28px; overflow:hidden; background:url(../image/fagui_hd.png) no-repeat left 12px; padding-left:12px;font-family:"微软雅黑"; font-size:14px;}
+.fagui_xfkd{font-family:"微软雅黑"; font-weight:bold; font-size:16px; float:left; background:url(../image/fagui_fz.png) no-repeat left 15px; padding-left:22px; overflow:hidden;}
+.fagui_tit03{ border-bottom:1px solid #AECDD2; height:42px; line-height:42px; overflow:hidden;}
+.fagui_flzx{ background:url(../image/fagui_flzx.png) no-repeat left 12px;}
+.fagui_qus{font-family:"微软雅黑";line-height:25px;}
+.fagui_as{ float:left;font-family:"微软雅黑"; font-weight:bold; color:#196DA7; width:20px;}
+.fagui_as01{ float:left; width:250px;color:#656565;}
+.fagui_fgss{ background:url(../image/fagui_fgrs.png) no-repeat left 12px; padding-left:25px; color:#196DA7;}
+.fagui_img{ height:50px; overflow:hidden;}
+.fagui_rslist dl dd{ width:50px; float:left; padding-left:17px; height:80px; overflow:hidden;}
+.fagui_Itit{ line-height:25px; color:#595555;font-family:"微软雅黑";}
+.fagui_imgtex a,.fagui_list li a{ color:#656565;}
+.fagui_more a{color:#4789B7;}
