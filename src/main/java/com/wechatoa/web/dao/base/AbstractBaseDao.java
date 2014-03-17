@@ -6,7 +6,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 public abstract class AbstractBaseDao<T> {  
 	  
-    // SPRING JDBC模板接口  
+    // SPRING JDBC模板接口 
+	@Resource 
     private JdbcTemplate jdbcTemplate;  
   
     public JdbcTemplate getJdbcTemplate() {  

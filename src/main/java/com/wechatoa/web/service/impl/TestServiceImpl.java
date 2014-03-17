@@ -29,7 +29,7 @@ import com.wechatoa.web.vo.TestVo;
 public class TestServiceImpl implements ITestService{
 
 	@Autowired
-	private TestDaoImpl userDao;
+	private TestDaoImpl testDao;
 	
 	@Override
     public void saveUser() {
@@ -37,12 +37,12 @@ public class TestServiceImpl implements ITestService{
 	    userVo.setUsername("suilei隋磊");
 	    userVo.setPassword("123456");
 	    
-	    userDao.save(userVo);
+	    testDao.save(userVo);
     }
 
 	@Override
     public List<TestVo> queryByUserName(String username) {
-		List<TestVo> list = userDao.queryByUserName(username);
+		List<TestVo> list = testDao.queryByUserName(username);
 	    return list;
     }
 	

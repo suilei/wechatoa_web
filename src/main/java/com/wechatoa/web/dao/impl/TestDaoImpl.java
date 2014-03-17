@@ -25,7 +25,7 @@ import com.wechatoa.web.vo.TestVo;
  * @author sui lei
  * @date 2014-3-16
  */
-@Component("userDao")
+@Component("testDao")
 public class TestDaoImpl extends AbstractBaseDao<TestVo> implements ITestDao{
 
 	@Override
