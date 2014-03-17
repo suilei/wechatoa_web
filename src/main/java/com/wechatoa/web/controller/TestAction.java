@@ -16,8 +16,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.wechatoa.web.service.IUserService;
-import com.wechatoa.web.vo.UserVo;
+import com.wechatoa.web.service.ITestService;
+import com.wechatoa.web.vo.TestVo;
 
 
 /**
@@ -28,7 +28,7 @@ import com.wechatoa.web.vo.UserVo;
 @Controller
 public class TestAction {
 	@Autowired
-	private IUserService userService;
+	private ITestService userService;
 	@RequestMapping("/")
 	public String index(){
 		System.out.println("userService:" + userService);
@@ -38,7 +38,7 @@ public class TestAction {
 	
 	@RequestMapping("/queryUser")
 	@ResponseBody
-	public List<UserVo> queryUser(){
+	public List<TestVo> queryUser(){
 		System.out.println("userService:" + userService);
 		return userService.queryByUserName("suilei隋磊");
 	}
