@@ -19,6 +19,6 @@ import com.wechatoa.web.vo.TestVo;
  * @date 2014-3-16
  */
 public interface ITestDao {
-	public void save(TestVo userVo);
+	public int save(TestVo userVo);
 	public List<TestVo> queryByUserName(String username);  
 }

@@ -32,12 +32,13 @@ public class TestServiceImpl implements ITestService{
 	private TestDaoImpl testDao;
 	
 	@Override
-    public void saveUser() {
+    public int saveUser() {
 	    TestVo userVo = new TestVo();
-	    userVo.setUsername("suilei隋磊");
-	    userVo.setPassword("123456");
+	    userVo.setUsername("suilei隋磊123");
+	    userVo.setPassword("1234567");
 	    
-	    testDao.save(userVo);
+	    int key = testDao.save(userVo);
+	    return key;
     }
 
 	@Override

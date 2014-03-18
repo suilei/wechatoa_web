@@ -9,11 +9,17 @@
  */
 package com.wechatoa.web.dao.impl;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.List;
 
+import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Component;
 
 import com.wechatoa.web.dao.ITestDao;
@@ -29,9 +35,20 @@ import com.wechatoa.web.vo.TestVo;
 public class TestDaoImpl extends AbstractBaseDao<TestVo> implements ITestDao{
 
 	@Override
-    public void save(TestVo userVo) {
-		String save_sql = "insert into t_test_user(username,password) values(?,?)";
-	    getJdbcTemplate().update(save_sql, userVo.getUsername(), userVo.getPassword());
+    public int save(final TestVo userVo) {
+		KeyHolder keyHolder = new GeneratedKeyHolder();  
+		final String sql = "insert into t_test_user(username,password) values(?,?)";
+	    getJdbcTemplate().update(new PreparedStatementCreator() {
+			public PreparedStatement createPreparedStatement(
+					Connection connection) throws SQLException {
+				PreparedStatement ps = connection.prepareStatement(sql,
+						Statement.RETURN_GENERATED_KEYS);
+				ps.setString(1, userVo.getUsername());
+				ps.setString(2, userVo.getPassword());
+				return ps;
+			}
+	    }, keyHolder);
+	    return keyHolder.getKey().intValue();
     }
 
 	@SuppressWarnings("unchecked")
@@ -43,7 +60,7 @@ public class TestDaoImpl extends AbstractBaseDao<TestVo> implements ITestDao{
         return list;  
     }
 	
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "rawtypes" })
     private class UserMapper implements RowMapper {  
         public Object mapRow(ResultSet rs, int i) throws SQLException {  
             TestVo vo = new TestVo();  

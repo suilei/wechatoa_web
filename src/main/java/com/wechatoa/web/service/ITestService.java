@@ -22,6 +22,6 @@ import com.wechatoa.web.vo.TestVo;
  */
 @Service
 public interface ITestService {
-	public void saveUser();
+	public int saveUser();
 	public List<TestVo> queryByUserName(String username);
 }
