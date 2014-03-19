@@ -1,5 +1,5 @@
 // 测试相关操作
-http://localhost:8080/wechatoa_web/test/saveUser
+http://localhost:8080/wechatoa_web/test/saveUser 
 --------------------------------------------
 // 部门相关操作
 http://localhost:8080/wechatoa_web/dept/saveDept?deptName=部门A&deptDesc=关于部门A的描述
