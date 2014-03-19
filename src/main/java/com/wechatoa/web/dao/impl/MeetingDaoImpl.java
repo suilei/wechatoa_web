@@ -19,14 +19,13 @@ import org.springframework.stereotype.Component;
 import com.wechatoa.web.dao.IMeetingDao;
 import com.wechatoa.web.dao.base.AbstractBaseDao;
 import com.wechatoa.web.vo.MeetingVo;
-import com.wechatoa.web.vo.TestVo;
 
 /**
  * @author suilei
  * @date 2014年3月18日 下午4:39:31
  */
 @Component("meetingDao")
-public class MeetingDaoImpl extends AbstractBaseDao<TestVo> implements IMeetingDao {
+public class MeetingDaoImpl extends AbstractBaseDao<Object> implements IMeetingDao {
 
 	@Override
 	public long addMeeting(final MeetingVo mv) {
@@ -78,4 +77,24 @@ public class MeetingDaoImpl extends AbstractBaseDao<TestVo> implements IMeetingD
             return vo;  
         }  
     }
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<MeetingVo> queryAllMeetingFromMe(String employeeId) {
+		String sql = "select * from t_meeting where m_owner = ?";  
+        List<MeetingVo> list = this.getJdbcTemplate().query(sql,  
+                new Object[] { employeeId }, new MeetingMapper()); 
+        System.out.println("list:" + list);
+        return list;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<MeetingVo> queryMeetingByMeetingId(long meetingId) {
+		String sql = "select * from t_meeting where m_id = ?";  
+        List<MeetingVo> list = this.getJdbcTemplate().query(sql,  
+                new Object[] { meetingId }, new MeetingMapper()); 
+        System.out.println("list:" + list);
+        return list;
+	}
 }

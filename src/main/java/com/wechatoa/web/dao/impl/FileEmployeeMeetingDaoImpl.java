@@ -14,28 +14,32 @@ import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Component;
 
-import com.wechatoa.web.dao.IEmployeeMeetingDao;
+import com.wechatoa.web.dao.IFileEmployeeMeetingDao;
 import com.wechatoa.web.dao.base.AbstractBaseDao;
-import com.wechatoa.web.vo.EmployeeMeetingVo;
+import com.wechatoa.web.vo.FileEmployeeMeetingVo;
 
 /**
  * @author suilei
- * @date 2014年3月18日 下午5:36:04
+ * @date 2014年3月19日 下午3:07:40
  */
-@Component("employeeMeetingDao")
-public class EmployeeMeetingDaoImpl extends AbstractBaseDao<Object> implements IEmployeeMeetingDao {
+@Component("fileEmployeeMeetingDao")
+public class FileEmployeeMeetingDaoImpl extends AbstractBaseDao<Object> implements IFileEmployeeMeetingDao {
 
+	/* (non-Javadoc)
+	 * @see com.wechatoa.web.dao.IFileEmployeeMeetingDao#addFileEmployeeMeeting(com.wechatoa.web.vo.FileEmployeeMeetingVo)
+	 */
 	@Override
-	public long addEmployeeMeeting(final EmployeeMeetingVo emv) {
+	public long addFileEmployeeMeeting(final FileEmployeeMeetingVo femv) {
 		KeyHolder keyHolder = new GeneratedKeyHolder();  
-		final String sql = "insert into t_employee_meeting(e_id,m_id) values(?,?)";
+		final String sql = "insert into t_employee_meeting_file(e_id,f_id,m_id) values(?,?,?)";
 	    getJdbcTemplate().update(new PreparedStatementCreator() {
 			public PreparedStatement createPreparedStatement(
 					Connection connection) throws SQLException {
 				PreparedStatement ps = connection.prepareStatement(sql,
 						Statement.RETURN_GENERATED_KEYS);
-				ps.setString(1, emv.getEmployeeId());
-				ps.setLong(2, emv.getMeetingId());
+				ps.setString(1, femv.getEmployeeId());
+				ps.setLong(2, femv.getFileId());
+				ps.setLong(3, femv.getMeetingId());
 				return ps;
 			}
 	    }, keyHolder);
@@ -43,11 +47,11 @@ public class EmployeeMeetingDaoImpl extends AbstractBaseDao<Object> implements I
 	}
 
 	@Override
-	public List<String> queryEmployeeIdByMeetingId(long meetingId) {
-		String sql = "select e_id from t_employee_meeting where m_id = ?";  
+	public List<Long> queryMySepcMeetingFile(long meetingId, String employeeId) {
+		String sql = "select f_id from t_employee_meeting_file where m_id = ? and e_id = ?";  
 		System.out.println("meetingId:" + meetingId);
-        List<String> list = this.getJdbcTemplate().queryForList(sql,  
-                new Object[] { meetingId }, String.class); 
+        List<Long> list = this.getJdbcTemplate().queryForList(sql,  
+                new Object[] { meetingId, employeeId }, Long.class); 
         System.out.println("list:" + list);
         return list; 
 	}

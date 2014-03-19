@@ -8,14 +8,13 @@ import org.springframework.stereotype.Component;
 import com.wechatoa.web.dao.IMeetingRoomDao;
 import com.wechatoa.web.dao.base.AbstractBaseDao;
 import com.wechatoa.web.vo.MeetingRoomVo;
-import com.wechatoa.web.vo.TestVo;
 
 /**
  * @author suilei
  * @date 2014年3月18日 下午3:39:27
  */
 @Component("meetingRoomDao")
-public class MeetingRoomDaoImpl extends AbstractBaseDao<TestVo> implements IMeetingRoomDao {
+public class MeetingRoomDaoImpl extends AbstractBaseDao<Object> implements IMeetingRoomDao {
 
 	@Override
 	public void saveMeetingRoom(MeetingRoomVo mrv) {

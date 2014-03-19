@@ -1,21 +1,33 @@
 // 测试相关操作
 http://localhost:8080/wechatoa_web/test/saveUser
-
+--------------------------------------------
 // 部门相关操作
 http://localhost:8080/wechatoa_web/dept/saveDept?deptName=部门A&deptDesc=关于部门A的描述
 http://localhost:8080/wechatoa_web/dept/queryDeptByName?deptName=部门A
-
+--------------------------------------------
 // 员工相关操作
 http://localhost:8080/wechatoa_web/employee/addEmployee?employeeName=隋磊&employeeGender=1&employeePhone=1234567&employeeEmail=123@126.com&employeeId=00001&employeeAvatar=http://www.baidu.com&deptId=1
 http://localhost:8080/wechatoa_web/employee/addEmployee?employeeName=阿白&employeeGender=1&employeePhone=23234567&employeeEmail=123456@126.com&employeeId=00002&employeeAvatar=http://www.sina.com&deptId=2
 http://localhost:8080/wechatoa_web/employee/getMyInfo?employeeId=00001
-
+--------------------------------------------
 // 会议室相关操作
 http://localhost:8080/wechatoa_web/meetingRoom/addMeetingRoom?roomName=1012&roomAddr=10层12会议室
 http://localhost:8080/wechatoa_web/meetingRoom/addMeetingRoom?roomName=1013&roomAddr=10层13会议室
 http://localhost:8080/wechatoa_web/meetingRoom/addMeetingRoom?roomName=1014&roomAddr=10层14会议室
-
+--------------------------------------------
 // 会议相关操作
+// 1.不带附件
 http://localhost:8080/wechatoa_web/meeting/addMeeting?eIdList=00001,00002&meetingTitle=18大学习&meetingDate=2014-03-15 12:40:35&meetingDuration=1.5&meetingSummary=学习18大精神，深化改革&meetingStatus=0&meetingAvatar=www.baidu.com&meetingOwner=00001&meetingRoomId=1
 http://localhost:8080/wechatoa_web/meeting/addMeeting?eIdList=00001&meetingTitle=17大学习&meetingDate=2014-03-16 12:40:35&meetingDuration=2.5&meetingSummary=学习17大精神，深化改革&meetingStatus=0&meetingAvatar=www.baidu.com&meetingOwner=00001&meetingRoomId=2
 http://localhost:8080/wechatoa_web/meeting/addMeeting?eIdList=00001,00002&meetingTitle=16大学习&meetingDate=2014-03-17 12:40:35&meetingDuration=3.5&meetingSummary=学习16大精神，深化改革&meetingStatus=0&meetingAvatar=www.baidu.com&meetingOwner=00002&meetingRoomId=1
+// 2.带附件
+http://localhost:8080/wechatoa_web/meeting/addMeeting?eIdfIdList=00001,1;00001,2;00002,3;00002,1&eIdList=00001,00002&meetingTitle=15大学习&meetingDate=2014-03-18 12:40:35&meetingDuration=3.5&meetingSummary=学习15大精神，深化改革&meetingStatus=0&meetingAvatar=www.baidu.com&meetingOwner=00002&meetingRoomId=1
+// 3.查询我发起的会议
+http://localhost:8080/wechatoa_web/meeting/queryAllMeetingFromMe?employeeId=00001
+// 4.查询指定会议的信息(带文件）
+http://localhost:8080/wechatoa_web/meeting/queryMySpecMeetingInfo?employeeId=00001&meetingId=7
+	 查询指定会议的信息(不带文件）
+http://localhost:8080/wechatoa_web/meeting/queryMySpecMeetingInfo?employeeId=00001&meetingId=6
+--------------------------------------------
+// 文件相关操作
+http://localhost:8080/wechatoa_web/file/addFile?fileName=18大精神&fileSize=100&fileType=doc&fileUrl=www.baidu.com

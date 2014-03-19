@@ -14,4 +14,6 @@ import com.wechatoa.web.vo.MeetingVo;
 public interface IMeetingDao {
 	public long addMeeting(MeetingVo mv);
 	public List<MeetingVo> queryMeetingByEmployeeId(String employeeId);
+	public List<MeetingVo> queryMeetingByMeetingId(long meetingId);
+	public List<MeetingVo> queryAllMeetingFromMe(String employeeId);
 }

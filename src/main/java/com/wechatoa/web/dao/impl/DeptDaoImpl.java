@@ -19,14 +19,13 @@ import org.springframework.stereotype.Component;
 import com.wechatoa.web.dao.IDeptDao;
 import com.wechatoa.web.dao.base.AbstractBaseDao;
 import com.wechatoa.web.vo.DeptVo;
-import com.wechatoa.web.vo.TestVo;
 
 /**
  * @author suilei
  * @date 2014年3月17日 下午6:35:24
  */
 @Component("deptDao")
-public class DeptDaoImpl extends AbstractBaseDao<TestVo> implements IDeptDao {
+public class DeptDaoImpl extends AbstractBaseDao<Object> implements IDeptDao {
 
 	@Override
 	public int saveDept(final DeptVo deptVo) {

@@ -3,6 +3,8 @@
  */
 package com.wechatoa.web.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -28,5 +30,17 @@ public class MeetingServiceImpl implements IMeetingService {
 	public long addMeeting(MeetingVo mv) {
 		long key = mdi.addMeeting(mv);
 		return key;
+	}
+	@Override
+	public List<MeetingVo> queryAllMeetingFromMe(String employeeId) {
+		return mdi.queryAllMeetingFromMe(employeeId);
+	}
+	@Override
+	public MeetingVo queryMeetingByMeetingId(long meetingId) {
+		List<MeetingVo> list = mdi.queryMeetingByMeetingId(meetingId);
+		if (list != null) {
+			return list.get(0);
+		}
+		return new MeetingVo();
 	}
 }

@@ -3,6 +3,8 @@
  */
 package com.wechatoa.web.dao;
 
+import java.util.List;
+
 import com.wechatoa.web.vo.EmployeeMeetingVo;
 
 /**
@@ -11,4 +13,5 @@ import com.wechatoa.web.vo.EmployeeMeetingVo;
  */
 public interface IEmployeeMeetingDao {
 	public long addEmployeeMeeting(EmployeeMeetingVo emv);
+	public List<String> queryEmployeeIdByMeetingId(long meetingId);
 }

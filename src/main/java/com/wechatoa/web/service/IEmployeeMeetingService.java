@@ -3,6 +3,8 @@
  */
 package com.wechatoa.web.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.wechatoa.web.vo.EmployeeMeetingVo;
@@ -14,4 +16,5 @@ import com.wechatoa.web.vo.EmployeeMeetingVo;
 @Service
 public interface IEmployeeMeetingService {
 	public long addEmployeeMeeting(EmployeeMeetingVo emv);
+	public List<String> queryEmployeeIdByMeetingId(long meetingId);
 }

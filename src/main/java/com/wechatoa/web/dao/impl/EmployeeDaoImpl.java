@@ -19,14 +19,13 @@ import org.springframework.stereotype.Component;
 import com.wechatoa.web.dao.IEmployeeDao;
 import com.wechatoa.web.dao.base.AbstractBaseDao;
 import com.wechatoa.web.vo.EmployeeVo;
-import com.wechatoa.web.vo.TestVo;
 
 /**
  * @author suilei
  * @date 2014年3月18日 下午2:29:56
  */
 @Component("employeeDao")
-public class EmployeeDaoImpl extends AbstractBaseDao<TestVo> implements IEmployeeDao{
+public class EmployeeDaoImpl extends AbstractBaseDao<Object> implements IEmployeeDao{
 
 	@Override
 	public int saveEmployee(final EmployeeVo employeeVo) {
